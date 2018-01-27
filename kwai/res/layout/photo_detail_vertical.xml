@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root" android:background="?contentBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.yxcorp.plugin.media.player.PhotoVideoPlayerView android:id="@id/player" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <com.yxcorp.gifshow.widget.PhotosScaleHelpView android:layout_gravity="center" android:id="@id/out_mask" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/out_fill" android:background="?contentBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kwai_title_photo" />
+        <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" layout="@layout/line_divider_grey" />
+    </LinearLayout>
+    <ImageView android:id="@id/like_image" android:visibility="invisible" android:layout_width="100.0dip" android:layout_height="90.0dip" android:src="@drawable/detail_icon_like_doublepressed" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@string/liked" />
+    <RelativeLayout android:id="@id/ad_floating_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/fast_up_down" android:paddingBottom="60.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:src="@drawable/live_list_icon_bottom_normal" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/liked" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/photo_editor_holder_height" android:layout_alignParentBottom="true" layout="@layout/photo_detail_bottom" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/swipe_photo_thumb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

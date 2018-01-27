@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/container_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:gravity="center" android:orientation="horizontal" android:id="@id/panel_radio_group_bg" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true" android:alpha="0.0" />
+    <com.yxcorp.gifshow.widget.KwaiRadioGroupWithIndicator android:gravity="center" android:id="@id/panel_radio_group_with_indicator" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_alignParentBottom="true">
+        <com.yxcorp.gifshow.widget.KwaiRadioGroup android:orientation="horizontal" android:id="@id/panel_radio_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size2" android:textColor="@color/camera_action_bar_text_color_dark" android:gravity="center" android:id="@id/album_radio_btn" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/maker_tab_album" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+            <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size2" android:textColor="@color/camera_action_bar_text_color_dark" android:gravity="center" android:id="@id/camera_radio_btn" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/shoot" android:layout_weight="1.0" app:textSizeAdjustable="true" />
+            <LinearLayout android:gravity="center" android:id="@id/live_radio_wrapper" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <ImageView android:id="@id/live_locked_iamgeview" android:layout_width="11.5dip" android:layout_height="13.5dip" android:layout_marginRight="4.0dip" android:src="@drawable/shoot_ic_live_lock" />
+                <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:enabled="false" android:textSize="@dimen/text_size2" android:textColor="@color/camera_action_bar_text_color_dark" android:gravity="center" android:id="@id/live_radio_btn" android:background="@null" android:visibility="visible" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:button="@null" android:text="@string/live" app:textSizeAdjustable="true" />
+            </LinearLayout>
+        </com.yxcorp.gifshow.widget.KwaiRadioGroup>
+        <View android:layout_gravity="bottom|center|left" android:id="@id/radio_indicator" android:background="@color/orange_color" android:layout_width="wrap_content" android:layout_height="3.0dip" />
+    </com.yxcorp.gifshow.widget.KwaiRadioGroupWithIndicator>
+    <FrameLayout android:id="@id/album_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/title_bar_height" />
+    <FrameLayout android:id="@id/magic_emoji_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.yxcorp.gifshow.fragment.PhotoClickPreview android:id="@id/photo_click_preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

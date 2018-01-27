@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+import "log/client_base.proto";
+
+option java_package = "com.kuaishou.protobuf.log";
+option objc_class_prefix = "KSU";
+
+// 应用基础信息
+message AppPackage {
+    enum Product {
+        UNKNOWN_PRODUCT = 0; // 未知
+        KUAISHOU = 1; // 快手
+        KUAISHOU_GAME_EXTENSION = 2; // 快手游戏插件
+        KUAISHOU_LIVE_MATE = 3; // 快手直播助手
+        KUAISHOU_VIDEO_EDITOR = 4; // 快影
+        COSMICVIDEO = 5; // 宇宙视频
+    }
+
+    enum Platform {
+        UNKNOWN_PLATFORM = 0; // 未知
+        ANDROID_PHONE = 1; // Android手机
+        ANDROID_PAD = 2; // Android Pad
+        IPHONE = 3; // iPhone
+        IPAD = 4; // iPad
+        WINDOWS_PC = 5; //Windows PC
+    }
+
+    Product product = 1; // 产品名称, 不同产品独立进行统计分析
+    Platform platform = 2; // 平台
+    string language = 3; // 语言, 例: zh-cn
+    string channel = 4; // 用户来源渠道
+    string version_name = 5; // 版本名
+    int32 version_code = 6; // 版本号
+    string package_name = 7; // 应用包名
+}
+
+// 所有Event都包含的数据, 由SDK构建
+message CommonPackage {
+    IdentityPackage identity_package = 1; // 用户和设置Id
+    AppPackage app_package = 2; // 应用信息
+    DevicePackage device_package = 3; // 设备基本信息
+    NetworkPackage network_package = 4; // 网络信息
+    LocationPackage location_package = 5; // 地理位置信息
+    repeated Experiment experiment = 6; // A/B测试实验
+}
+
+

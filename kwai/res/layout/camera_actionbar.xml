@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/record_layout" android:background="@color/surface_color1_normal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/camera_action_bar_bottom_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.BlinkProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="6.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/progress_horizontal" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0">
+            <FrameLayout android:layout_gravity="center" android:id="@id/camera_magic_emoji" android:clipChildren="false" android:layout_width="60.0dip" android:layout_height="60.0dip">
+                <ImageView android:id="@id/camera_magic_emoji_btn" android:background="@drawable/camera_button_round_border" android:visibility="visible" android:src="@drawable/camera_btn_magic_emoji" android:scaleType="fitCenter" style="@style/Theme.CameraActionButton" />
+                <ImageView android:layout_gravity="center|right|top" android:id="@id/notify_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_magic_face_notify" />
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_gravity="center" android:id="@id/record_btn_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="10.0" layout="@layout/record_btn_not_fullscreen" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0">
+            <ImageButton android:id="@id/finish_record_btn" android:visibility="visible" android:src="@drawable/shoot_btn_done" style="@style/Theme.CameraActionButton" />
+            <ImageView android:id="@id/button_switch_music" android:background="@drawable/camera_button_round_border" android:src="@drawable/shooting_btn_music" style="@style/Theme.CameraActionButton" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

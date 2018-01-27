@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/fuck" android:background="#99000000" android:layout_width="fill_parent" android:layout_height="135.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/time_line_container" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.widget.adv.AdvEditTimelineCoreView android:id="@id/qrange_core_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/range_skip_box" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/adv_edit_new_box_height">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/range_skip_undo" android:layout_width="@dimen/adv_edit_new_box_height" android:layout_height="@dimen/adv_edit_new_box_height" android:src="@drawable/edit_clip_undo_btn" android:scaleType="center" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/range_skip_add" android:layout_width="@dimen/adv_edit_new_box_height" android:layout_height="@dimen/adv_edit_new_box_height" android:src="@drawable/edit_crop_cut_btn" android:scaleType="center" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

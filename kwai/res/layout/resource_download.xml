@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="230.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/background_iv" android:layout_width="210.0dip" android:layout_height="180.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/material_img_download_bg_normal" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/status_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="107.0dip" android:layout_marginRight="15.0dip" android:text="@string/downloading" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/close_iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/button_close_download_resource" />
+    <Button android:textSize="@dimen/text_size_14" android:textColor="@android:color/white" android:id="@id/download_btn" android:background="@drawable/button1" android:layout_width="190.0dip" android:layout_height="30.0dip" android:layout_marginBottom="20.0dip" android:text="@string/fail_download" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ProgressBar android:id="@id/download_progressbar" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="5.0dip" android:layout_marginBottom="35.0dip" android:max="1000" android:progressDrawable="@drawable/background_resource_download_progress" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal" />
+</RelativeLayout>

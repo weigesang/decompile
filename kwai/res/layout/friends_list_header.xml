@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/list_item_black" android:gravity="center_horizontal" android:id="@id/friends_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/list_item_remark" android:gravity="center_horizontal" android:id="@id/friends_header_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/explore_friend_follow_tip" />
+    <View android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" android:layout_marginTop="20.0dip" />
+</LinearLayout>

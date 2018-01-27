@@ -1,0 +1,48 @@
+{
+    "api": [
+        "api.gifshow.com",
+        "api.ksapisrv.com",
+        "180.186.38.200",
+        "101.251.217.210"
+    ],
+    "upload": [
+        "upload.gifshow.com",
+        "upload.ksapisrv.com",
+        "180.186.38.200",
+        "101.251.217.210"
+    ],
+    "ulog": [
+        "ulog.gifshow.com",
+        "ulog.ksapisrv.com"
+    ],
+    "https": [
+        "apissl.ksapisrv.com",
+        "apissl.gifshow.com"
+    ],
+    "pay": [
+        "api1.kuaishoupay.com",
+        "api2.kuaishoupay.com",
+        "pay.ssl.kuaishou.com"
+    ],
+    "pay_check":[
+        "apissl.ksapisrv.com",
+        "apissl.kuaishou.com",
+        "apissl.gifshow.com"
+    ],
+    "live":[
+        "live.gifshow.com",
+        "live.ksapisrv.com"
+    ],
+    "sf2018": [
+        "sf2018-api.gifshow.com",
+        "sf2018-api.ksapisrv.com"
+    ],
+    "sf2018Pay":[
+        "sf2018-pay.gifshow.com",
+        "sf2018-pay.ksapisrv.com"
+    ],
+    "push":[
+        "push.gifshow.com",
+        "push.ksapisrv.com"
+    ]
+}

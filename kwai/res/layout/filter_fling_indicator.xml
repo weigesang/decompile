@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size7" android:textColor="@color/text_color_white" android:layout_gravity="center" android:id="@id/filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,178 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+option java_package = "com.kuaishou.protobuf.log.event";
+option objc_class_prefix = "KSU";
+
+
+// 页面元素详细信息
+message ElementPackage {
+
+    enum Status {
+        UNKNOWN_STATUS = 0; // 未知
+        CHECKED = 1; // 选中
+        UNCHECKED = 2; // 未选中
+    }
+
+    uint32 index = 1; // 元素位置, 从0开始
+    double value = 2; // 元素的值, 用于求和, 求平均等
+    Status status = 3; // 元素状态
+    string action = 4; // 元素业务类型。具体项目把具体业务的 proto 转成 json 字符串放进来
+}
+
+message UrlPackage {
+    enum PageType {
+        UNKNOWN_PAGE_TYPE = 0; // 未知
+        NATIVE = 1; // native页面
+        H5 = 2; // h5页面
+    }
+    // 一级页面
+    string page = 1; // 一级页面。具体项目把具体业务的 proto 转成 json 字符串放进来
+    string params = 2; // 参数列表参考埋点需求填写，填写格式：{key}={value}&{key}={value}
+    string identity = 3; // 实例的全局唯一标识，使用UUID即可
+    PageType page_type = 4; // 应用页面类型
+}
+
+// 展现事件
+message ShowEvent {
+    enum Action {
+        UNKNOWN_ACTION = 0; // 未知
+        ENTER = 1; // 进入页面
+        LEAVE = 2; // 离开页面
+        RESUME = 3; // 恢复页面, 也可以认为是热加载, 这种情况下不需要重新渲染
+    }
+
+    enum Type {
+        UNKNOWN_TYPE = 0; // 未知
+        PAGE = 1; // 页面
+        ITEM = 2; // 条目
+        DIALOG = 3; // 对话框
+        BANNER = 4; // Banner
+        BUTTON = 5; // 按钮
+        BUBBLE = 6; // 引导气泡
+        VIDEO = 7; // 视频
+        LIVE = 8; // 直播
+        POPUP_WINDOW = 9; // 浮层
+    }
+
+    enum Status {
+        UNKNOWN_STATUS = 0; // 未知
+        SUCCESS = 1; // 成功
+        FAIL = 2; // 失败
+    }
+
+    enum ActionType {
+        UNKNOWN_ACTION_TYPE = 0; // 未知
+        CLICK = 1; // 点击进入或离开页面
+        LEFT_PULL = 2; // 左滑进入或离开页面
+        RIGHT_PULL = 3; // 右滑进入或离开页面
+    }
+
+    Action action = 1; // 进入或离开
+    Type type = 2; // 页面类型
+    Status status = 3; // 展现状态, 成功或者失败
+    ActionType action_type = 4; // 记录进入或离开页面的方式
+    uint64 time_cost = 5; // 页面加载, 刷新或离开时长, 单位: ms
+    uint64 stay_length = 6; // 页面停留时长, 单位: ms
+    UrlPackage url_package = 7; // 页面, 精确到页面级别, 控件级别的展现, 需填充 element_package
+    ElementPackage element_package = 8; // 元素信息, 控件展现信息填充。
+    UrlPackage refer_url_package = 9; // 引用页面URL
+    ElementPackage refer_element_package = 10; // 触发该show事件的元素信息。
+    string content_package = 11; // 相关内容。具体项目把具体业务的 proto 转成 json 字符串放进来
+}
+
+// 任务事件
+message TaskEvent {
+    enum Type {
+        UNKNOWN_TYPE = 0;
+        USER_OPERATION = 1; // 用户操作
+        STAY_LENGTH_STAT_EVENT = 2; // 非页面级别的停留时长统计事件，比如不同tab的停留时长
+    }
+
+    enum ElementType {
+        UNKNOWN_ELEMENT_TYPE = 0; // 未知
+        BUTTON = 1; // 按钮
+        LABEL = 2; // 标签
+        ICON = 3; // 图标, 暂时废弃不用!
+        IMAGE = 4; // 图片, 例: 作品封面
+        MENU = 5; // 菜单条目
+        LINK = 6; // 链接
+        TAB = 7; // Tab
+        INPUT_BOX = 8; // 输入框
+        OPTION_BOX = 9; // 选择框
+        NOTIFICATION = 10; // 通知栏
+        CARD = 11; // 卡片, 暂时废弃不用!
+        VIEW = 12; // 视图
+        PAGE = 13; // 页面
+        VIDEO = 14; // 视频
+        CELL = 15; // 列表中一个元素
+        BANNER = 16; // Banner
+        BUBBLE = 17; // 引导气泡
+        POPUP_WINDOW = 18; // 浮层
+    }
+    
+    enum OperationType {
+        UNKNOWN_OPERATION = 0;
+        CLICK = 1; // 点击
+        DOUBLE_CLICK = 2; // 双击
+        TRIPLE_CLICK = 3; // 三击
+        LONG_PRESS = 4; // 长按
+        PULL = 5; // 滑动
+        DRAG = 6; // 拖拽
+        SCALE = 7; // 双指缩放
+        PULL_DOWN = 8; // 下拉刷新
+        PULL_UP = 9; // 上拉加载更多
+    }
+    
+    // 操作方向
+    enum OperationDirection {
+        UNKNOWN_OPERATION_DIRECTION = 0;
+        UP = 1;
+        DOWN = 2;
+        LEFT = 3;
+        RIGHT = 4;
+    }
+    
+    enum Status {
+        UNKNOWN_STATUS = 0;
+        START = 1; // 开始
+        RETRY = 2; // 重试
+        PAUSE = 3; // 暂停
+        RESUME = 4; // 恢复
+        PENDING = 5; // 等待
+        PROCESSING = 6; // 进行中
+        SUCCESS = 7; // 成功
+        FAIL = 8; // 失败
+        CANCEL = 9; // 取消
+        FINISH = 10; // 完成，比如直播结束的，长链接关闭
+    }
+
+    Type type = 1; // 任务类型，包括用户操作、后台任务
+    ElementType element_type = 2; // 元素类型
+    Status status = 3; // 任务状态
+    OperationType operation_type = 4; // 用户操作类型
+    OperationDirection operation_direction = 5; // 用户操作方向
+    string session_id = 6; // 任务的 session Id, 确保是全局唯一, 通常使用UUID即可, 连续 Action 相同的 task 保持一样的 session id
+    UrlPackage url_package = 7; // Task发生页面
+    ElementPackage element_package = 8; // 触发Task发生的行为。
+    UrlPackage refer_url_package = 9; // 来源页面URL
+    ElementPackage refer_element_package = 10; // Task来源元素信息。
+    string content_package = 11; // event扩展参数。具体项目把具体业务的 proto 转成 json 字符串放进来
+}
+
+
+// 每次组装时包含其中一条
+//
+// 增加字段的话，需要在其对应的 Raw 版本中同步增加
+// 详见 RawBatchReportEvent 注释
+message EventPackage {
+    ShowEvent show_event = 1; // 展现
+    TaskEvent task_event = 2; // 任务
+}
+
+// 详见 RawBatchReportEvent 注释
+message RawEventPackage {
+    bytes show_event = 1; // 展现
+    bytes task_event = 2; // 任务
+}

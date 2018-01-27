@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.sf2018.landingpage.LandingPageCardView android:id="@id/landing_page_sent_item" android:background="@drawable/sf2018_landing_page_border_received_left_top" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="738.0">
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="18.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="572.0">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/landing_page_sent_item_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" fresco:actualImageScaleType="centerCrop" />
+            <include android:id="@id/landing_page_received_redpack" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_alignParentBottom="true" layout="@layout/sf2018_landing_page_received_redpack_item" />
+        </RelativeLayout>
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="148.0" />
+    </LinearLayout>
+    <View android:id="@id/landing_page_sent_item_border" android:background="@drawable/sf2018_landing_page_border_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="738.0">
+        <android.support.v4.widget.Space android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="18.0" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="572.0">
+            <ImageView android:id="@id/landing_page_sent_item_video_ico" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sf2018_landing_page_video_icon_play_normal" android:scaleType="center" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="148.0">
+            <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/landing_page_sent_btn" android:gravity="center" android:id="@id/landing_page_sent_item_btn" android:background="@drawable/sf2018_landing_page_send_btn" android:visibility="gone" android:layout_width="108.5dip" android:layout_height="25.5dip" android:layout_marginBottom="11.5dip" android:text="@string/landing_page_sent_to_friend" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <include android:id="@id/landing_page_received_user" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" layout="@layout/sf2018_landing_page_received_user_item" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/landing_page_sent_item_add" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/landing_page_sent_item_add_new_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sf2018_landing_page_video_icon_add" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/landing_page_add_new" android:id="@id/landing_page_sent_item_add_new_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26.0dip" android:text="@string/landing_page_shoot" />
+    </LinearLayout>
+</com.yxcorp.gifshow.sf2018.landingpage.LandingPageCardView>

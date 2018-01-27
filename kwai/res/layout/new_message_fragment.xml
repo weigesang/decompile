@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="?actionbarHeight" android:layout_alignParentTop="true" layout="@layout/kwai_title_default" />
+    <RelativeLayout android:id="@id/bottom_holder" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/editor_holder" android:background="@color/background_light" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_list_item_height">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/editor_send_image" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/message_send_img_icon" android:scaleType="center" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color3_normal" android:textColorHint="@color/text_color3_normal" android:gravity="center|left" android:id="@id/editor_holder_text" android:background="@null" android:paddingLeft="6.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="@dimen/dialog_list_item_height" android:hint="@string/message" android:layout_weight="1.0" style="@style/Theme.Widget.Text" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color3_normal" android:gravity="center" android:id="@id/permission_deny_prompt_tv" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/mail_limit" android:maxLines="1" />
+        <View android:background="#ffdedede" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/bottom_holder" android:layout_below="@id/title_root" style="@style/Kwai.Widget.RefreshLayout">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+</RelativeLayout>

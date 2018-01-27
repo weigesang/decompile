@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.entry.ShowCoverLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/start_live_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/start_live_tv_layout" android:paddingBottom="29.0dip" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/reshoot_iv" android:layout_width="76.0dip" android:layout_height="76.0dip" android:src="@drawable/shoot_cover_btn_back" />
+            </LinearLayout>
+            <LinearLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:id="@id/start_live_iv" android:layout_width="76.0dip" android:layout_height="76.0dip" android:src="@drawable/shoot_cover_btn_confirm" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/share_list" android:fadingEdge="horizontal" android:fadingEdgeLength="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginBottom="40.0dip" android:layout_above="@id/start_live_tv_layout" android:layout_centerHorizontal="true" android:overScrollMode="never" />
+        <com.yxcorp.gifshow.widget.StrokeEditLayout android:gravity="center" android:id="@id/start_live_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:layout_marginBottom="20.0dip" android:layout_above="@id/share_list" app:strokeColor="@color/live_message_stroke_color" app:strokeWidth="1.5dip" app:hint="@string/input_live_title" app:textSize="@dimen/text_size_15" app:textColor="@android:color/white" />
+        <com.yxcorp.gifshow.widget.LiveEntryTextEditor android:id="@id/live_title_editor" android:paddingTop="60.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/share_list" />
+    </RelativeLayout>
+</com.yxcorp.plugin.live.entry.ShowCoverLayout>

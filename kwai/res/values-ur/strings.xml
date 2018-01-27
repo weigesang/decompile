@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">روکیں</string>
+    <string name="hms_abort_message">ڈاؤن لوڈ روکیں؟</string>
+    <string name="hms_bindfaildlg_message">‎%1$s Huawei موبائل سروسز استعمال کرنے سے قاصر ہے۔ براہ کرم فون مینیجر شروع کریں یا سیٹنگز پر جائیں، ‎%2$s‎ (بشمول آٹو لانچ اور ثانوی لانچ) کیلئے تمام اجازتیں فعال کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="hms_cancel">منسوخ کریں</string>
+    <string name="hms_check_failure">اپ ڈیٹس کے لیے چیک کرنے سے قاصر۔</string>
+    <string name="hms_check_no_update">آپ پہلے سے ہی جدید ترین ورژن استعمال کررہے ہیں۔</string>
+    <string name="hms_checking">اپ ڈیٹس چیک ہو رہی ہیں...</string>
+    <string name="hms_confirm">اوکے</string>
+    <string name="hms_download_failure">Huawei موبائل خدمات کا پیکیج ڈاؤن لوڈ کرنے سے قاصر۔</string>
+    <string name="hms_download_no_space">وافر خالی جگہ نہیں۔ ڈاؤن لوڈ مکمل نہیں کی جا سکتی۔</string>
+    <string name="hms_download_retry">ڈاؤن لوڈ ناکام ہو گئی۔ دوبارہ کوشش کریں؟</string>
+    <string name="hms_downloading">Huawei موبائل خدمات ڈاؤن لوڈ کر رہا ہے | کارکردگی: %d%%</string>
+    <string name="hms_downloading_new">HMS ڈاؤن لوڈ ہو رہا ہے</string>
+    <string name="hms_install">انسٹال کریں</string>
+    <string name="hms_install_message">یہ فیچر استعمال کرنے کیلئے Huawei موبائل سروسزانسٹال کرنا ضروری ہے۔ انسٹال کریں؟</string>
+    <string name="hms_retry">دوبارہ کوشش کریں</string>
+    <string name="hms_update">اپ ڈیٹ</string>
+    <string name="hms_update_message">یہ خصوصیت استعمال کرنے کے لیے Huawei موبائل خدمات کے تازہ ترین ورژن پر اپ ڈیٹ کریں۔ ابھی اپ ڈیٹ کریں؟</string>
+    <string name="hms_update_message_new">"اس سروس کو درج ذیل ایپ کا تازہ ترین ورژن مطلوب ہے: ‎
+
+%1$s‎"</string>
+    <string name="hms_update_title">Huaweiموبائل سروسز</string>
+    <string name="tw__allow_btn_txt">اجازت دیں</string>
+    <string name="tw__composer_hint">کیا ہو رہا ہے؟</string>
+    <string name="tw__install">انسٹال کریں</string>
+    <string name="tw__login_btn_txt">ٹوئٹر سے لاگ ان کریں</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">ابھی نہیں</string>
+    <string name="tw__post_tweet">ٹویٹ</string>
+    <string name="tw__share_email_desc">%1$s کو اپنے ٹوئٹر اکاؤنٹ ‎@%2$s کے ساتھ منسلک شدہ ای میل ایڈریس تک رسائی حاصل کرنے کی اجازت دیں تاکہ %1$s اسے اس کی پرائیویسی پالیسی کے مطابق استعمال کر سکے۔ مثال کے طور پر، %1$s اس ایڈریس پر آپ کو اپ ڈیٹس اور دیگر معلومات بھیج سکتے ہیں۔</string>
+    <string name="tw__share_email_title">اپنا ای میل ایڈریس شیئر کریں</string>
+</resources>

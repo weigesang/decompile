@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="220.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="#fff9f9f9" android:layout_width="fill_parent" android:layout_height="45.0dip">
+        <TextView android:textSize="@dimen/text_size3" android:textColor="?actionbarTitleTextColor" android:layout_gravity="center_vertical" android:id="@id/dialog_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="@string/cancel" />
+        <TextView android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size3" android:textColor="?actionbarTitleTextColor" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/dialog_ok" android:paddingRight="22.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/ok" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/province_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:overScrollMode="never" />
+        <android.support.v7.widget.RecyclerView android:id="@id/city_list" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:overScrollMode="never" />
+    </LinearLayout>
+</LinearLayout>

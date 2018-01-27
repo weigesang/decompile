@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/kwai_title_default" />
+    <include layout="@layout/line_divider_grey" />
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/background" android:layout_marginTop="20.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+            <TableLayout android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TableRow android:id="@id/nickname_layout" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/nickname_label" android:layout_height="@dimen/user_info_item_height" android:layout_column="0" android:text="@string/nickname_label" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/nickname" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_edit_text_height" android:layout_marginLeft="@dimen/margin_default" android:layout_column="1" android:hint="@string/input_nick_name" android:singleLine="true" android:layout_weight="1.0" android:textDirection="ltr" app:textSizeAdjustable="true" />
+                </TableRow>
+                <View android:layout_marginLeft="90.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/copy_id_layout" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/id_text" android:padding="0.0dip" android:layout_height="@dimen/user_info_item_height" android:layout_column="0" android:text="@string/user_id_label" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/user_id_layout" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_column="1" android:layout_weight="1.0" android:onClick="onClick">
+                        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center" android:id="@id/user_id" android:padding="0.0dip" style="@style/Theme.Widget.Text.Gray" />
+                        <com.yxcorp.gifshow.widget.SizeAdjustableButton android:textSize="@dimen/text_size_10" android:textColor="@color/text_default_color" android:id="@id/change_user_info" android:background="@drawable/button1" android:padding="3.0dip" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:minWidth="50.0dip" android:minHeight="15.0dip" android:text="@string/click_to_copy" android:singleLine="true" app:textSizeAdjustable="true" />
+                    </LinearLayout>
+                </TableRow>
+                <View android:layout_marginLeft="90.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/qrcode_layout" android:clickable="true" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/qrcode_label" android:text="@string/qrcode_label" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_color4_normal" android:gravity="center_vertical" android:clickable="false" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_item_height" android:layout_marginLeft="@dimen/margin_default" android:layout_column="1" android:text="@string/qrcode_look" android:layout_weight="1.0" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/profile_edit_icon_qrcode" />
+                    <ImageView android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_arrow_right" />
+                </TableRow>
+                <View android:background="@color/background" android:layout_height="20.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/gender_layout" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/gender_label" android:layout_height="@dimen/user_info_item_height" android:text="@string/gender_label" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default">
+                        <ImageView android:id="@id/gender_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/profile_avatar_genderbadge_secret" />
+                        <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/gender_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/sex_unknow" />
+                    </LinearLayout>
+                </TableRow>
+                <View android:layout_marginLeft="90.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/birthday_layout" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/birthday_label" android:layout_height="@dimen/user_info_item_height" android:text="@string/profile_birthday" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default">
+                        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/birthday_tv" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_edit_text_height" android:layout_marginLeft="@dimen/margin_default" android:layout_column="1" android:hint="@string/need_select_gender" android:singleLine="true" android:layout_weight="1.0" android:textDirection="ltr" app:textSizeAdjustable="true" />
+                    </LinearLayout>
+                </TableRow>
+                <View android:layout_marginLeft="90.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/address_layout" android:visibility="gone" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/address_label" android:layout_height="@dimen/user_info_item_height" android:text="@string/profile_location" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                    <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default">
+                        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:gravity="center_vertical" android:id="@id/address_tv" android:background="@null" android:layout_width="0.0dip" android:layout_height="@dimen/user_info_edit_text_height" android:layout_marginLeft="@dimen/margin_default" android:layout_column="1" android:hint="@string/need_select_gender" android:singleLine="true" android:layout_weight="1.0" android:textDirection="ltr" app:textSizeAdjustable="true" />
+                    </LinearLayout>
+                </TableRow>
+                <View android:layout_marginLeft="90.0dip" style="@style/Theme.Widget.DefaultDividerVertical" />
+                <TableRow android:id="@id/intro_layout" android:background="@null" android:layout_marginTop="@dimen/margin_default" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textColor="@color/text_hint_black_color" android:id="@id/intro_label" android:layout_height="wrap_content" android:layout_column="0" android:layout_span="2" android:text="@string/user_text" android:singleLine="true" style="@style/Theme.Widget.Profile.Edit.Label" />
+                </TableRow>
+                <TableRow android:layout_marginTop="@dimen/margin_default" android:layout_marginBottom="@dimen/margin_default" android:onClick="onClick" style="@style/Theme.Widget.Profile.Row">
+                    <com.yxcorp.gifshow.widget.EmojiEditText android:textSize="@dimen/text_size_14" android:textColor="@color/profile_introduction_text_color" android:gravity="center_vertical" android:id="@id/intro_text" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_column="0" android:layout_span="2" android:hint="@string/empty_user_text" android:singleLine="false" android:layout_weight="1.0" android:textDirection="ltr" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

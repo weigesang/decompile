@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/background_layout" android:background="@drawable/edit_bg_thickness_normal" android:layout_width="40.0dip" android:layout_height="189.5dip">
+        <com.makeramen.roundedimageview.RoundedImageView android:id="@id/pencil_thumb_iv" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/background_seekbar_thumb" android:layout_centerHorizontal="true" app:riv_oval="true" />
+        <com.yxcorp.gifshow.widget.adv.PencilWidthSeekBar android:id="@id/seek_bar" android:layout_width="40.0dip" android:layout_height="150.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:maxHeight="40.0dip" android:max="1000" android:progress="0" android:layout_below="@id/pencil_thumb_iv" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:KwaiSeekBarWidth="40.0dip" app:KwaiSeekBarHeight="150.0dip" style="@style/Theme.Widget.SeekBar.Kwai.AdvPencil" />
+    </RelativeLayout>
+</RelativeLayout>

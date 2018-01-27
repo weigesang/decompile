@@ -1,0 +1,55 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+option java_package = "com.kuaishou.protobuf.log.cosmicvideo.element";
+option objc_class_prefix = "KSU";
+
+// 元素定义
+message ElementAction {
+    enum ActionType {
+        UNKNOWN_ACTION = 0;
+        LOAD_STORY = 1; // 故事加载
+        PLAY_STORY = 2; // 故事播放
+        LOAD_MORE = 3; // 加载更多
+        ENTER_SETTINGS = 4; // 设置点击
+        LIKE_STORY = 5; // 喜欢故事
+        ENTER_LIKED_LIST = 6; // 进入喜欢列表页面
+        CLICK_LOGIN = 7; // 登录点击
+        INPUT_PHONE_NUMBER = 8; // 输入手机号
+        CLICK_BIND = 9; // 绑定点击
+        GET_SMS_AUTHENTICATION_CODE = 10; // 获取验证码
+        REGAIN_SMS_AUTHENTICATION_CODE = 11; // 重新获取验证码
+        PLAY_STORY_IN_APP = 12; // app内播放故事
+        SHARE_STORY = 13; // 故事分享
+        SHOW_STORY = 14; //视频展示
+        CANCEL_LIKE_AUTHOR = 15; //取消喜欢创作者
+        CLICK_AUTHOR_LIST = 16; //创作者列表点击
+        CLICK_HEAD = 17; //点击头像
+        CLICK_NICKNAME = 18; //点击昵称
+        DRAG_SEEK_BAR = 19; //拖动播放条
+        LIKE_AUTHOR = 20; //喜欢创作者
+        PAUSE_SEEK_BAR = 21; //暂停播放
+        REGAIN_SEEK_BAR = 22; //恢复播放
+        SHARE_PROFILE = 23; //分享个人主页
+        SWITCH_TAB = 24; //切换tab
+        TAB_STAY_LENGTH = 25; //tab停留时长
+        SHOW_AUTHOR = 26; //创作者曝光
+        SHOW_SEEK_BAR = 27; //播放条曝光
+        SHOW_BANNER_STORY = 28; // banner故事曝光
+        PLAY_BANNER_STORY = 29; // banner故事播放
+        SWITCH_BANNER_STORY = 30; // banner故事切换
+        ENTER_RECOMMEND_FOLLOW_BY_CLICK_BUTTON = 31; // 点击按钮进入推荐关注页
+        REFRESH_STORY = 32; // 刷新故事
+        FOLLOW_USER = 33; // 关注用户
+        UNFOLLOW_USER = 34; // 取消关注用户
+        VIEW_PHOTO_INFORMATION = 35; // 查看视频相关信息
+        ENTER_FULL_SCREEN = 36; // 进入全屏播放
+        EXIT_FULL_SCREEN = 37; // 退出全屏播放
+        CLEAR_CACHE = 38; // 清除缓存
+        VIEW_ABOUT_US = 39; // 查看关于我们
+        LOGOUT = 40; // 退出登录
+    }
+
+    ActionType action = 1;
+}

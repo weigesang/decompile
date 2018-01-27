@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.detail.view.LikeView style="@style/Theme.PhotoOperationView.Large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/like_button" android:src="?PhotoActionBarLikeIcon" android:contentDescription="@string/like" style="@style/Theme.PhotoOperationView.Large" />
+    <ImageView android:id="@id/iv_like_help" android:visibility="gone" android:src="?PhotoActionBarLikeIcon" android:contentDescription="@string/like" style="@style/Theme.PhotoOperationView.Large" />
+</com.yxcorp.gifshow.detail.view.LikeView>

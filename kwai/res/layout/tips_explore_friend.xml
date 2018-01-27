@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-60.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/explore_friend_guide_img" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/text_color1_normal" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/explore_friend_guide_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color15_normal" android:layout_gravity="center_horizontal" android:id="@id/explore_friend_guide_desc" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <Button android:textSize="@dimen/text_size_16" android:textColor="@color/text_default_color" android:layout_gravity="center_horizontal" android:id="@id/explore_friend_guide_btn" android:background="@drawable/button2" android:layout_width="300.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" />
+    </LinearLayout>
+</FrameLayout>

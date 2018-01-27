@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/empty_face_im" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/friends_choice_empty" android:contentDescription="@string/empty_prompt" />
+    <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/list_item_black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/empty_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/margin_large" android:text="@string/explore_friend_find_follow_contact" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_hint_black_color" android:gravity="center_horizontal" android:id="@id/prompt_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="60.0dip" android:layout_marginTop="@dimen/margin_default" android:layout_marginRight="60.0dip" android:text="@string/explore_friend_contact_permission_tip" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/select_friends_next_btn_text" android:gravity="center" android:id="@id/next" android:background="@drawable/select_friends_tips_button_background" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="40.0dip" android:layout_marginTop="25.0dip" android:layout_marginRight="40.0dip" android:text="@string/next" />
+</LinearLayout>

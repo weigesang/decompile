@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/edit_fragment_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/seek_bar_container" android:layout_width="fill_parent" android:layout_height="0.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.yxcorp.widget.KwaiSeekBar android:id="@id/intensity_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:KwaiSeekBarBackground="@color/text_black_light" app:KwaiSeekBarProgress="@color/text_hint_black_color" app:KwaiSeekBarDisplayProgressText="false" style="@style/Theme.Widget.SeekBarNewEdit.Kwai" xmlns:app="http://schemas.android.com/apk/res-auto" />
+        </LinearLayout>
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/Theme.Preview.EditItemsList" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/title_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/radio_area" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="@dimen/title_bar_height" android:layout_centerInParent="true">
+        <RadioButton android:layout_gravity="center" android:id="@id/irb_radioButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="radio" android:layout_centerInParent="true" style="@style/Theme.Navigator.RadioButton" />
+        <ImageView android:id="@id/irb_iconify" android:visibility="invisible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginTop="1.5dip" android:layout_marginRight="-6.0dip" android:src="@drawable/background_orange_circle2" android:layout_alignTop="@id/irb_radioButton" android:layout_alignRight="@id/irb_radioButton" />
+        <ImageView android:id="@id/irb_iconify_live" android:visibility="invisible" android:layout_width="18.0dip" android:layout_height="12.0dip" android:layout_marginTop="-4.0dip" android:layout_marginRight="-16.0dip" android:src="@drawable/nav_badge_live" android:layout_alignTop="@id/irb_radioButton" android:layout_alignRight="@id/irb_radioButton" />
+    </RelativeLayout>
+    <ImageView android:id="@id/irb_nav_btn_triangle" android:paddingBottom="6.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_btn_city_triangle" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

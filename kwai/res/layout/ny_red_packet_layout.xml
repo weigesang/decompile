@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:id="@id/red_packet_unpack" android:background="@drawable/ny_bg_redpacket_close" android:layout_width="@dimen/red_packet_dialog_layout_width" android:layout_height="@dimen/red_packet_dialog_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/ny_red_packet_close_view" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar_view" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="46.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="14.0sp" android:textColor="#ffffcd7a" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="ME" android:layout_below="@id/avatar_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#80ffcd7a" android:id="@id/send_a_red_packet_note_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/sf2018_red_pack_received_note" android:layout_below="@id/name_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="#ffffcd7a" android:gravity="center" android:id="@id/state_error_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.5dip" android:maxWidth="196.0dip" android:text="" android:layout_below="@id/send_a_red_packet_note_view" android:layout_centerHorizontal="true" />
+    <com.yxcorp.gifshow.sf2018.play.SFRedPackStateView android:id="@id/snatch_state_view" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="188.0dip" android:layout_centerHorizontal="true" />
+</RelativeLayout>

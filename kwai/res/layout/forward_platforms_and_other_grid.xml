@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <GridView android:id="@id/platforms" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <View android:id="@id/divider_line" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <GridView android:id="@id/other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@null" android:stretchMode="columnWidth" android:numColumns="auto_fit" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

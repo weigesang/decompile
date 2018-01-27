@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- 日志的 id 信息 -->
+  <!-- 页面的 module 信息 -->
+  <item name="tag_log_module" type="id"/>
+  <!-- 页面的 pageUri -->
+  <item name="tag_log_page_uri" type="id"/>
+  <!-- 页面的 Uri 的参数 -->
+  <item name="tag_log_page_uri_params" type="id"/>
+  <!-- 当前 View 的信息，当点击的时候，将参数带上 -->
+  <item name="tag_log_view_module" type="id"/>
+  <!-- 当前 View 的位置-->
+  <item name="tag_log_index" type="id"/>
+  <!-- 当前 View 信息-->
+  <item name="tag_log_element" type="id"/>
+  <!-- 当前 View 登录-->
+  <item name="tag_log_login_source" type="id"/>
+  <!-- 当前 View 的名称-->
+  <item name="tag_view_name" type="id"/>
+  <!-- 是否打开 CardShow 的 Log -->
+  <item name="tag_log_view_enable_card_show" type="id"/>
+  <!-- 是否关闭 pageShow 的 log -->
+  <item name="tag_log_forbidden_page_show" type="id"/>
+  <!-- CardShow 的 Action-->
+  <item name="tag_log_card_show_action" type="id"/>
+  <!-- 是否打开子 View 的 CardShow -->
+  <item name="tag_log_view_enable_sub_card_show" type="id"/>
+  <!-- 当前 View 的 Content-->
+  <item name="tag_log_content_package" type="id"/>
+  <!-- 当前 Item View 的 位置-->
+  <item name="item_view_position" type="id"/>
+  <!-- 当前 Item View 绑定的数据-->
+  <item name="item_view_bind_data" type="id"/>
+</resources>

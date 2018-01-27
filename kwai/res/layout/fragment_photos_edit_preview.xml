@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color1_normal" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentBottom="true" style="@style/Theme.Widget.Group">
+        <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:id="@id/photo_filter" android:text="@string/photo_filter" android:drawableTop="@drawable/photo_filter" app:textSizeAdjustable="true" style="@style/Theme.Widget.GroupButton" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:id="@id/music" android:text="@string/music_background" android:drawableTop="@drawable/photo_music" app:textSizeAdjustable="true" style="@style/Theme.Widget.GroupButton" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:id="@id/cover" android:text="@string/cover" android:drawableTop="@drawable/photo_cover" app:textSizeAdjustable="true" style="@style/Theme.Widget.GroupButton" />
+    </RadioGroup>
+    <FrameLayout android:layout_gravity="center" android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="86.0dip" android:layout_above="@id/action_bar" android:layout_below="@id/title_root">
+        <LinearLayout android:orientation="vertical" android:id="@id/preview_player_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size7" android:textColor="@color/text_color_white" android:layout_gravity="center" android:id="@id/filter_name" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/container_other" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/action_bar" />
+    <RelativeLayout android:id="@id/fake_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/fake_left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:src="@drawable/edit_nav_btn_back_white" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/fake_right_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:src="@drawable/edit_nav_btn_done_white" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

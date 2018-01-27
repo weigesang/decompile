@@ -1,0 +1,154 @@
+.class public final Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;
+.super Lcom/yxcorp/gifshow/recycler/b;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter$CoverPresenter;,
+        Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter$ArtistMusicItemClickListener;
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/yxcorp/gifshow/recycler/b",
+        "<",
+        "Lcom/yxcorp/gifshow/model/Music;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field c:I
+
+.field d:Landroid/media/MediaPlayer;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .prologue
+    .line 49
+    invoke-direct {p0}, Lcom/yxcorp/gifshow/recycler/b;-><init>()V
+
+    .line 59
+    const/4 v0, -0x1
+
+    iput v0, p0, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;->c:I
+
+    return-void
+.end method
+
+.method static synthetic a(Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;)V
+    .locals 1
+
+    .prologue
+    .line 49
+    .line 1122
+    iget-object v0, p0, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;->d:Landroid/media/MediaPlayer;
+
+    if-eqz v0, :cond_1
+
+    .line 1123
+    iget-object v0, p0, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;->d:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->isPlaying()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 1124
+    iget-object v0, p0, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;->d:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->stop()V
+
+    .line 1127
+    :cond_0
+    :try_start_0
+    iget-object v0, p0, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;->d:Landroid/media/MediaPlayer;
+
+    invoke-virtual {v0}, Landroid/media/MediaPlayer;->release()V
+    :try_end_0
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 1134
+    :goto_0
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;->d:Landroid/media/MediaPlayer;
+
+    .line 49
+    :cond_1
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method
+
+
+# virtual methods
+.method protected final c(Landroid/view/ViewGroup;I)Landroid/view/View;
+    .locals 1
+
+    .prologue
+    .line 64
+    sget v0, Lcom/yxcorp/gifshow/g$i;->music_item_category:I
+
+    invoke-static {p1, v0}, Lcom/yxcorp/utility/ad;->a(Landroid/view/ViewGroup;I)Landroid/view/View;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method protected final f(I)Lcom/yxcorp/gifshow/recycler/d;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Lcom/yxcorp/gifshow/recycler/d",
+            "<",
+            "Lcom/yxcorp/gifshow/model/Music;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    const/4 v2, 0x0
+
+    .line 69
+    new-instance v0, Lcom/yxcorp/gifshow/recycler/d;
+
+    invoke-direct {v0}, Lcom/yxcorp/gifshow/recycler/d;-><init>()V
+
+    .line 70
+    new-instance v1, Lcom/yxcorp/gifshow/music/category/SimpleMusicPresenter;
+
+    invoke-direct {v1}, Lcom/yxcorp/gifshow/music/category/SimpleMusicPresenter;-><init>()V
+
+    invoke-virtual {v0, v2, v1}, Lcom/yxcorp/gifshow/recycler/d;->b(ILcom/smile/gifmaker/a/b;)Lcom/smile/gifmaker/a/b;
+
+    .line 71
+    new-instance v1, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter$ArtistMusicItemClickListener;
+
+    invoke-direct {v1, p0}, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter$ArtistMusicItemClickListener;-><init>(Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;)V
+
+    invoke-virtual {v0, v2, v1}, Lcom/yxcorp/gifshow/recycler/d;->b(ILcom/smile/gifmaker/a/b;)Lcom/smile/gifmaker/a/b;
+
+    .line 72
+    new-instance v1, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter$CoverPresenter;
+
+    invoke-direct {v1, p0}, Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter$CoverPresenter;-><init>(Lcom/yxcorp/gifshow/music/singer/ArtistMusicAdapter;)V
+
+    invoke-virtual {v0, v2, v1}, Lcom/yxcorp/gifshow/recycler/d;->b(ILcom/smile/gifmaker/a/b;)Lcom/smile/gifmaker/a/b;
+
+    .line 73
+    return-object v0
+.end method

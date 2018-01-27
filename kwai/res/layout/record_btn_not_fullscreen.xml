@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.record.RecordButtonNotFullScreen android:layout_gravity="center" android:id="@id/record_btn_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="10.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/record_btn" android:layout_width="76.0dip" android:layout_height="76.0dip" android:src="@drawable/button_capture_record" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/text_default_color" android:gravity="center" android:layout_gravity="center" android:id="@id/record_btn_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.yxcorp.gifshow.widget.record.RecordButtonNotFullScreen>

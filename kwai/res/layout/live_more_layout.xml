@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.widget.FilledLinerLayout android:orientation="vertical" android:id="@id/item_layout" android:background="@drawable/live_bg_more_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.0dip" android:minWidth="@dimen/live_more_layout_min_width"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_red_pack" android:background="@drawable/live_more_top_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/live_more_icon_redpacket_normal" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/send_red_packet" />
+    </LinearLayout>
+    <View android:id="@id/live_share_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_share" android:background="@drawable/live_more_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/live_more_icon_share_normal" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/share" />
+        <View android:id="@id/share_oval_tips_view" android:background="@drawable/live_push_share_followers_oval_tips" android:visibility="visible" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginLeft="7.0dip" />
+    </LinearLayout>
+    <View android:id="@id/live_settings_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_settings" android:background="@drawable/live_more_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:background="@drawable/live_more_icon_setting_normal" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/settings" />
+    </LinearLayout>
+    <View android:id="@id/live_gift_effects_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/magic_gift_effects_container" android:background="@drawable/live_more_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:id="@id/magic_gift_effects" android:background="@drawable/live_more_btn_magic_emotion" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/gifts_effect" />
+    </LinearLayout>
+    <View android:id="@id/live_mirror_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_mirror" android:background="@drawable/live_more_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width" android:contentDescription="live_mirror">
+        <ImageView android:background="@drawable/live_more_button_mirror" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/mirror" />
+    </LinearLayout>
+    <View android:id="@id/live_soundeffect_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_soundeffect" android:background="@drawable/live_more_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:background="@drawable/live_more_icon_soundeffect_normal" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/voice_effect" />
+    </LinearLayout>
+    <View android:id="@id/live_music_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_music" android:background="@drawable/live_more_bottom_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:background="@drawable/live_more_button_music" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/music" />
+    </LinearLayout>
+    <View android:id="@id/live_beauty_filter_divider" android:background="#1affffff" android:layout_width="fill_parent" android:layout_height="@dimen/live_more_layout_item_divider_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_beauty_filter" android:background="@drawable/live_more_bottom_item_background" android:paddingLeft="10.0dip" android:paddingRight="13.0dip" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="@dimen/live_more_layout_min_width">
+        <ImageView android:background="@drawable/live_more_button_beautify" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/beauty_filter" />
+    </LinearLayout>
+</com.yxcorp.plugin.live.widget.FilledLinerLayout>

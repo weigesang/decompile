@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/background_round_corner_grey" android:layout_width="50.0dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/preview_without_border" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/filter_preview_beauty" android:scaleType="centerInside" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/preview" app:fadeDuration="0" app:roundAsCircle="false" app:roundedCornerRadius="3.5dip" />
+    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size5" android:textColor="@color/preview_effect_text_color_white" android:ellipsize="end" android:gravity="center" android:id="@id/name" android:background="@drawable/background_effect_name" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="17.0dip" android:text="@string/preview" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentBottom="true" app:textSizeAdjustable="true" app:textSizeAdjustWithHeight="true" app:minTextSize="@dimen/text_size_9" />
+    <ImageView android:id="@id/preview_border" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/background_orange" />
+</RelativeLayout>

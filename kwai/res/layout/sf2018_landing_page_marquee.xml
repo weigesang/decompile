@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:fresco="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_width="20.0dip" android:layout_height="20.0dip" fresco:roundAsCircle="true" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_12" android:textColor="@color/landing_page_marquee" android:ellipsize="end" android:id="@id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:maxWidth="80.0dip" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/landing_page_marquee" android:ellipsize="end" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:singleLine="true" />
+</LinearLayout>

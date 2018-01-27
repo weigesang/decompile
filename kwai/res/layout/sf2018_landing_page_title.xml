@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="57.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/left_btn" android:src="@drawable/sf2018_landing_page_btn_back_yellow" android:contentDescription="@string/go_back" style="@style/Theme.PhotoOperationView.Large" />
+        <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/right_btn" android:src="@drawable/sf2018_landing_page_btn_rule_yellow" android:layout_alignParentRight="true" style="@style/Theme.PhotoOperationView.Large" />
+        <TextView android:textSize="@dimen/text_size_18" android:textColor="@color/landing_page_title_text" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:text="@string/sf2018_activity_entry" android:singleLine="true" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerInParent="true" android:alpha="0.0" />
+    </com.yxcorp.gifshow.widget.KwaiActionBar>
+    <View android:id="@id/bottom_shadow" android:layout_width="fill_parent" android:layout_height="7.0dip" />
+</LinearLayout>

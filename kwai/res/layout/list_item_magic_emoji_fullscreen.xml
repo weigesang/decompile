@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/background_magic_emoji_fullscreen" android:layout_width="80.0dip" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/magic_emoji_cover" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="35.0dip" android:scaleType="fitCenter" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="#80ffffff" android:id="@id/magic_emoji_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="95.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/undownload_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_magic_emoji_undownload" android:layout_alignRight="@id/magic_emoji_cover" android:layout_alignBottom="@id/magic_emoji_cover" />
+    <ImageView android:id="@id/notify_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:src="@drawable/icon_magic_face_notify" android:layout_alignTop="@id/magic_emoji_cover" android:layout_alignRight="@id/magic_emoji_cover" />
+    <ImageView android:id="@id/redpacket_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="68.0dip" android:src="@drawable/magicemoji_redpocket" />
+    <com.yxcorp.gifshow.widget.DownloadProgressBar android:id="@id/download_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminate="false" android:indeterminateOnly="false" android:layout_centerInParent="true" />
+</RelativeLayout>

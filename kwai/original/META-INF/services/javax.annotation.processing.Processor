@@ -1,0 +1,2 @@
+com.kwai.annotation.InjectModuleProcessor
+com.smile.gifshow.annotation.processing.PreferenceProcessor

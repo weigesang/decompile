@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scrollview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.plugin.magicemoji.widget.FaceEffectPlayerView android:id="@id/playerview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/playerview" android:layout_alignBottom="@id/playerview" />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/ny_red_packet_float_view" />
+    <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kwai_title_new_year2018" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/player_sent_to_friend_btn_text" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/send_to_friend" android:background="@drawable/sf_red_pack_btn_send" android:layout_width="160.5dip" android:layout_height="36.0dip" android:layout_marginBottom="20.0dip" android:text="@string/landing_page_sent_to_friend" />
+    <ProgressBar android:layout_gravity="bottom|center" android:id="@id/progress" android:visibility="visible" android:layout_width="fill_parent" android:indeterminate="false" style="@style/Theme.Widget.ProgressBar.Thin" />
+</FrameLayout>

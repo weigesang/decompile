@@ -1,0 +1,69 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+option java_package = "com.kuaishou.protobuf.log.cosmicvideo.content";
+import "log/client_base.proto";
+option objc_class_prefix = "KSU";
+
+// 故事作品相关参数
+message StoryPackage {
+    string identity = 1; // 故事 id
+    string exp_tag = 2; // 推荐后端的参数
+    uint64 index = 3; // 故事位置id
+    string llsid = 4; // 曝光id
+    string author_id = 5; // 创作者id
+}
+
+// 故事中每页播放相关参数
+message PagePlayPackage {
+    enum Type {
+        UNKNOWN1 = 0;
+        VIDEO = 1; // 视频
+        PICTURE = 2; // 图片
+        TEXT = 3; // 文本
+    }
+    
+    Type type = 1;  // 类型
+    string id = 2; // id
+    uint64 duration = 3; // 总时长，单位 ms
+    uint64 played_duration = 4; // 播放时长，单位ms
+    uint32 index = 5; // 视频在故事中的位置
+}
+
+// 故事播放相关参数
+message StoryPlayPackage {
+    string identity = 1; // 故事 id
+    uint32 page_count = 2; // 故事总页数
+    uint32 play_page_count = 3; // 故事播放页数
+    uint32 play_count = 4; // 视频播放总次数
+    repeated PagePlayPackage page_play_package = 5;  // 每页播放参数
+}
+
+// 第三方账号平台
+message ThirdPartyPackage {
+    ThirdPartyPlatform platform = 1; // 第三方账号绑定
+}
+
+// 用户相关参数
+message UserPackage {
+    string identity = 1; // 用户id
+    uint32 index = 2; // 用户位置id
+    bool author = 3; // 是否为创作者
+}
+
+// tab详细信息相关参数
+message TabDetailPackage {
+    string identity = 1; // tab id
+    string name = 2; // tab名称
+    uint64 stay_length = 3; // tab页停留时长, 单位: ms
+}
+
+message ContentPackage {
+    StoryPackage story_package = 1; // 故事作品相关参数
+    ThirdPartyPackage third_party_package = 2; // 第三方账号平台
+    StoryPlayPackage story_play_package = 3;// 故事播放相关参数
+    UserPackage user_package = 4;// 用户信息相关参数
+    TabDetailPackage tab_detail_package = 5;// tab详细信息相关参数
+}
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dialog_content_layout" android:background="@drawable/live_bg_redpacket_close" android:layout_width="@dimen/red_packet_dialog_layout_width" android:layout_height="@dimen/red_packet_dialog_layout_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.plugin.redpacket.PacketAlertCloseView android:id="@id/close_view" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentTop="true" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar_view" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="25.0dip" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:roundAsCircle="true" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="14.0sp" android:textColor="#ffffcd7a" android:id="@id/name_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_below="@id/avatar_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#80ffcd7a" android:id="@id/send_a_red_packet_note_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/send_a_red_packet_note" android:layout_below="@id/name_view" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="40.0sp" android:textColor="#ffffcd7a" android:id="@id/coin_num_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="126.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="#ffffcd7a" android:id="@id/coin_num_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginBottom="8.5dip" android:text="@string/kwai_coin" android:layout_toRightOf="@id/coin_num_view" android:layout_alignBottom="@id/coin_num_view" />
+    <com.yxcorp.plugin.redpacket.PreSnatchRedPacketStateView android:id="@id/pre_snatch_state_view" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="188.0dip" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.5dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <View android:id="@id/live_pre_snatch_bottom_icon" android:background="@drawable/live_bg_redpacket_decorate_close" android:visibility="gone" android:layout_width="96.0dip" android:layout_height="14.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/live_pre_snatch_bottom_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="12.0sp" android:textColor="@color/live_red_packet_pre_snatch_bottom_text_color" android:id="@id/live_pre_snatch_bottom_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/raise_red_packet" />
+            <View android:id="@id/live_pre_snatch_bottom_next_icon" android:background="@drawable/live_pre_snatch_bottom_next_icon_background" android:layout_width="4.5dip" android:layout_height="7.5dip" android:layout_marginLeft="4.5dip" android:layout_marginTop="1.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

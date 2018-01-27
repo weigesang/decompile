@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/landing_page_notice_bg" android:layout_width="fill_parent" android:layout_height="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color11_normal" android:ellipsize="end" android:id="@id/landing_page_notice_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    <ImageView android:layout_width="26.0dip" android:layout_height="fill_parent" android:src="@drawable/sf2018_landing_page_notice_arrow_normal" android:scaleType="center" />
+</LinearLayout>

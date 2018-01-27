@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#7f000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/landing_page_received_redpack_icon" android:layout_width="17.0dip" android:layout_height="20.0dip" android:src="@drawable/sf2018_landing_page_redpack_close" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/text_size_11" android:textColor="#ffe63b40" android:id="@id/landing_page_received_redpack_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dip" android:text="@string/landing_page_redpack_not_remove" />
+</LinearLayout>

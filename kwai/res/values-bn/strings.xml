@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="com_facebook_image_download_unknown_error">একটি চিত্র ডাউনলোড করার সময়ে অপ্রত্যাশিত ত্রুটি দেখা দিচ্ছে৷</string>
+    <string name="com_facebook_internet_permission_error_message">WebView লগ ইন করার জন্য INTERNET-এর অনুমতির প্রয়োজন আছে</string>
+    <string name="com_facebook_internet_permission_error_title">AndroidManifest ত্রুটি</string>
+    <string name="com_facebook_like_button_liked">পছন্দ করা হয়েছে</string>
+    <string name="com_facebook_like_button_not_liked">পছন্দ করুন</string>
+    <string name="com_facebook_loading">লোড হচ্ছে...</string>
+    <string name="com_facebook_loginview_cancel_action">বাতিল করুন</string>
+    <string name="com_facebook_loginview_log_in_button">লগ ইন করুন</string>
+    <string name="com_facebook_loginview_log_in_button_long">Facebook -এর সাথে লগ ইন করুন</string>
+    <string name="com_facebook_loginview_log_out_action">লগ আউট করুন</string>
+    <string name="com_facebook_loginview_log_out_button">লগ আউট করুন</string>
+    <string name="com_facebook_loginview_logged_in_as">এই হিসাবে লগ ইন করা হয়েছে: %1$s</string>
+    <string name="com_facebook_loginview_logged_in_using_facebook">Facebook ব্যবহার করে লগ ইন করা হয়েছে</string>
+    <string name="com_facebook_send_button_text">পাঠান</string>
+    <string name="com_facebook_share_button_text">ভাগ করুন</string>
+    <string name="com_facebook_tooltip_default">নতুন! আপনি নিয়ন্ত্রণে আছেন-অ্যাপসের সাথে আপনি কোন তথ্য ভাগ করতে চাইছেন তা চয়ন করুন৷</string>
+    <string name="messenger_send_button_text">প্রেরণ করুন</string>
+    <string name="hms_abort">থামুন</string>
+    <string name="hms_abort_message">ডাউনলোড থামাবেন?</string>
+    <string name="hms_bindfaildlg_message">%1$s Huawei মোবাইল পরিষেবা ব্যবহার করতে অক্ষম। অনুগ্রহপূর্বক ফোন পরিচালক লঞ্চ করুন বা সেটিংসে যান, %2$s এর জন্য সকল অনুমতি সক্ষম করুন (স্বতঃলঞ্চ এবং সেকেন্ডারি লঞ্চসহ) এবং আবার চেষ্টা করুন।</string>
+    <string name="hms_cancel">বাতিল করুন</string>
+    <string name="hms_check_failure">আপডেট আছে কিনা পরীক্ষা করা গেল না।</string>
+    <string name="hms_check_no_update">আপনি ইতিমধ্যেই সাম্প্রতিক সংস্করণটি ব্যবহার করছেন।</string>
+    <string name="hms_checking">আপডেট আছে কিনা দেখা হচ্ছে...</string>
+    <string name="hms_confirm">ঠিক আছে</string>
+    <string name="hms_download_failure">Huawei মোবাইল পরিষেবা প্যাকেজ ডাউনলোড করা গেল না।</string>
+    <string name="hms_download_no_space">পর্যাপ্ত মুক্ত স্থান নেই। ডাউনলোড শেষ করতে পারা যাবে না।</string>
+    <string name="hms_download_retry">ডাউনলোড করা গেল না। আবার চেষ্টা করবেন?</string>
+    <string name="hms_downloading">Huawei মোবাইল পরিষেবা ডাউনলোড হচ্ছে | প্রগতি: %d%%</string>
+    <string name="hms_downloading_new">HMS ডাউনলোড হচ্ছে</string>
+    <string name="hms_install">ইন্সটল করুন</string>
+    <string name="hms_install_message">এই বৈশিষ্ট্য ব্যবহার করতে, Huawei মোবাইল পরিষেবা অবশ্যই ইন্সটল করতে হবে। ইন্সটল করবেন?</string>
+    <string name="hms_retry">পুনরায় চেষ্টা করুন</string>
+    <string name="hms_update">আপডেট করুন</string>
+    <string name="hms_update_message">এই বৈশিষ্ট্যটি ব্যবহার করতে, Huawei মোবাইল পরিষেবার সাম্প্রতিক সংস্করণে আপডেট করুন। এখন আপডেট করবেন?</string>
+    <string name="hms_update_message_new">"এই পরিষেবার নিম্নে উল্লিখিত অ্যাপের সর্বশেষ সংস্করণ প্রয়োজন:
+
+%1$s"</string>
+    <string name="hms_update_title">Huawei মোবাইল পরিষেবা</string>
+    <string name="tw__allow_btn_txt">অনুমতি দিন</string>
+    <string name="tw__composer_hint">কী ঘটছে?</string>
+    <string name="tw__install">ইনস্টল করুন</string>
+    <string name="tw__login_btn_txt">টুইটার দিয়ে লগ ইন করুন</string>
+    <string name="tw__max_tweet_chars">140</string>
+    <string name="tw__not_now_btn_txt">এখন নয়</string>
+    <string name="tw__post_tweet">টুইট</string>
+    <string name="tw__share_email_desc">%1$s কে আপনার টুইটার অ্যাকাউন্ট @%2$s এর সঙ্গে যুক্ত ইমেল ঠিকানা অ্যাক্সেস করতে দিন যাতে কিনা %1$s তা তাদের গোপনীয়তা নীতি অনুসারে ব্যবহার করতে পারে। উদাহরণস্বরূপ, %1$s আপনাকে ওই ঠিকানায় আপডেট ও অন্যান্য তথ্য পাঠাতে পারবে।</string>
+    <string name="tw__share_email_title">আপনার ইমেইল ঠিকানা ভাগ করুন</string>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/time_line_container" android:background="#ffffffff" android:paddingTop="14.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/edit_content">
+        <com.yxcorp.gifshow.widget.adv.AdvEditTimelineCoreView android:id="@id/qrange_core_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/effects_tabs_container" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="-4.0dip" android:layout_above="@id/time_line_container">
+        <com.yxcorp.gifshow.widget.KwaiRadioGroup android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size2" android:textColor="@color/camera_action_bar_text_color" android:gravity="center" android:id="@id/filter_effect_btn" android:background="@drawable/camera_bottom_panel_background" android:layout_width="92.0dip" android:layout_height="fill_parent" android:checked="true" android:button="@null" android:text="@string/filter_effect" app:textSizeAdjustable="true" />
+            <com.yxcorp.gifshow.widget.SizeAdjustableRadioButton android:textSize="@dimen/text_size2" android:textColor="@color/camera_action_bar_text_color" android:gravity="center" android:id="@id/time_effect_btn" android:background="@drawable/camera_bottom_panel_background" android:layout_width="92.0dip" android:layout_height="fill_parent" android:button="@null" android:text="@string/time_effect" app:textSizeAdjustable="true" />
+        </com.yxcorp.gifshow.widget.KwaiRadioGroup>
+        <View android:background="#ffe2e2e2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/edit_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@id/filter_effect_recyclerview" layout="@layout/recycler_view" />
+        <include android:id="@id/time_effect_recyclerview" layout="@layout/recycler_view" />
+    </LinearLayout>
+</RelativeLayout>

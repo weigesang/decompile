@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+option java_package = "com.kuaishou.protobuf.log.cosmicvideo.page";
+option objc_class_prefix = "KSU";
+
+// 页面定义
+message UrlPage {
+    enum PageType {
+        UNKNOWN_PAGE = 0;
+        HOT = 1; // 热门列表页
+        HOME = 2; // 首页
+        STORY_PLAY = 3; // 故事播放页
+        SETTINGS = 4; // 设置页
+        LOGIN_HOME = 5; // 登录首页
+        SIGNUP_VERIFICATION = 6; // 获取验证码页
+        LIKE = 7; // 喜欢列表页
+        STORY_SHARE_H5 = 8; // 端外故事分享页
+        STORY_SHARE = 9; // 故事分享页
+        PROFILE = 10; // 个人主页
+        PROFILE_H5 = 11; // 端外h5个人主页
+        FOLLOW = 12; // 关注页
+        RECOMMEND_FOLLOW = 13; // 推荐关注页
+        FOLLOW_LIST = 14; // 关注列表页
+    }
+
+    PageType page = 1;
+}

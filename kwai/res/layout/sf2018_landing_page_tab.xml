@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sf2018_landing_page_edge" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/landing_page_right_edge" android:layout_toRightOf="@id/landing_page_left_edge">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/landing_page_tab_sent" android:background="@drawable/sf2018_landing_page_tab_left_selected" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/landing_page_tab_select" android:id="@id/landing_page_tab_sent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/landing_page_tab_sent" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/landing_page_tab_select" android:id="@id/landing_page_tab_sent_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/landing_page_tab_received" android:background="@drawable/sf2018_landing_page_tab_right_normal" android:layout_width="@dimen/ebpay_dimen_0dp" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/landing_page_tab_normal" android:id="@id/landing_page_tab_received_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/landing_page_tab_received" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/landing_page_tab_normal" android:id="@id/landing_page_tab_received_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

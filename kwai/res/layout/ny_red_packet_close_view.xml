@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/close_btn" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/close_icon" android:background="@drawable/ny_send_red_packet_close" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

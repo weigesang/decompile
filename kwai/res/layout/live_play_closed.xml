@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:placeholderImage="@color/live_close_bg" app:overlayImage="@color/live_close_bg" />
+    <android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:clickable="true" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/profile_btn_avatar_secret" android:scaleType="fitXY" android:layout_centerHorizontal="true" android:contentDescription="@string/avatar" avatar:roundAsCircle="true" avatar:layout_marginBottomPercent="2.3180008%" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/user_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/live_follow" android:maxLines="1" android:layout_below="@id/avatar" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="2.2410035%" />
+        <ToggleButton android:textSize="@dimen/text_size_12" android:textColor="@color/text_color11_normal" android:id="@id/follow_button" android:background="@drawable/live_profile_btn_follow" android:layout_width="0.0dip" android:layout_height="0.0dip" android:textOn="@string/followed" android:textOff="@string/make_follow" android:minWidth="100.0dip" android:text="@string/followed" android:maxLines="1" android:layout_below="@id/user_name" android:layout_centerHorizontal="true" app:layout_widthPercent="26.667%" app:layout_heightPercent="3.8640022%" app:layout_marginBottomPercent="5.4100037%" />
+        <TextView android:textSize="@dimen/text_size_25" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/live_is_closed" android:layout_width="wrap_content" android:layout_height="35.0dip" android:maxLines="1" android:layout_below="@id/follow_button" android:layout_centerHorizontal="true" app:layout_marginBottomPercent="3.0910015%" />
+        <View android:id="@id/separator_1" android:layout_below="@id/live_is_closed" style="@style/Theme.LiveEnd.VerticalDivider" />
+        <LinearLayout android:gravity="center" android:id="@id/live_info_panel" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/separator_1" app:layout_heightPercent="13.446999%">
+            <LinearLayout style="@style/Theme.LiveEnd.Row.Block">
+                <TextView android:id="@id/audience_count" style="@style/Theme.LiveEnd.Value" />
+                <TextView android:text="@string/live_audiences" style="@style/Theme.LiveEnd.Label" />
+            </LinearLayout>
+            <LinearLayout style="@style/Theme.LiveEnd.Row.Block">
+                <TextView android:id="@id/like_count" style="@style/Theme.LiveEnd.Value" />
+                <TextView android:text="@string/live_likes" style="@style/Theme.LiveEnd.Label" />
+            </LinearLayout>
+            <LinearLayout style="@style/Theme.LiveEnd.Row.Block">
+                <TextView android:id="@id/live_duration" style="@style/Theme.LiveEnd.Value" />
+                <TextView android:text="@string/live_time" style="@style/Theme.LiveEnd.Label" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/separator_2" android:layout_below="@id/live_info_panel" style="@style/Theme.LiveEnd.VerticalDivider" />
+        <Button android:textSize="@dimen/text_size_15" android:textColor="@color/text_color_white" android:id="@id/view_profile" android:background="@drawable/button21" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/view_live_owner_profile" android:layout_below="@id/separator_2" android:layout_centerHorizontal="true" app:layout_widthPercent="79.99999%" app:layout_heightPercent="6.182003%" app:layout_marginTopPercent="5.4100037%" app:layout_marginBottomPercent="2.3180008%" />
+        <Button android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_light" android:id="@id/close" android:background="@drawable/button20" android:layout_width="0.0dip" android:layout_height="0.0dip" android:text="@string/go_back" android:layout_below="@id/view_profile" android:layout_centerHorizontal="true" app:layout_widthPercent="79.99999%" app:layout_heightPercent="6.182003%" />
+    </android.support.percent.PercentRelativeLayout>
+    <com.yxcorp.plugin.live.widget.LivePendantView android:id="@id/live_pendant" android:visibility="gone" android:layout_width="@dimen/live_pendant_width" android:layout_height="@dimen/live_pendant_height" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/live_pendant_margin_top" />
+</RelativeLayout>

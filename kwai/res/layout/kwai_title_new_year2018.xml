@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:layout_width="fill_parent" android:layout_height="?actionbarHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/back_btn" android:src="@drawable/sf2018_landing_page_btn_back_white" android:contentDescription="@string/go_back" style="@style/Theme.PhotoOperationView.Large" />
+    <FrameLayout android:id="@id/avatar_wrapper" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <FrameLayout android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="17.5dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/follow" android:background="?PhotoActionBarFollowBackground" android:paddingLeft="13.0dip" android:paddingRight="27.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <com.yxcorp.gifshow.detail.view.DetailToolBarButtonView android:id="@id/follow_button" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="?PhotoActionBarFollowIcon" android:contentDescription="@string/follow_successfully" style="@style/Theme.PhotoOperationView.Large" />
+                <com.yxcorp.gifshow.detail.view.FollowTextView android:id="@id/follow_text_container" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip">
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="?PhotoActionBarFollowWhiteTextColor" android:gravity="center" android:id="@id/follow_text_white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/follow" android:maxLines="1" android:alpha="0.0" app:textSizeAdjustable="true" app:minTextSize="5.0sp" />
+                    <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="?PhotoActionBarFollowTextColor" android:gravity="center" android:id="@id/follow_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/follow" android:maxLines="1" app:textSizeAdjustable="true" app:minTextSize="5.0sp" />
+                </com.yxcorp.gifshow.detail.view.FollowTextView>
+            </LinearLayout>
+        </FrameLayout>
+        <com.yxcorp.gifshow.image.KwaiImageView android:layout_gravity="right" android:id="@id/avatar" android:layout_width="@dimen/photo_opertion_avatar_size" android:layout_height="@dimen/photo_opertion_avatar_size" android:src="@null" android:scaleType="fitXY" android:contentDescription="@string/avatar" app:fadeDuration="0" app:roundAsCircle="true" />
+    </FrameLayout>
+</com.yxcorp.gifshow.widget.KwaiActionBar>

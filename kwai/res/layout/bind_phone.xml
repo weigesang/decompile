@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/kwai_title_default" />
+    <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" layout="@layout/line_divider_grey" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff777777" android:id="@id/bind_reason_tv" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" />
+    <fragment android:name="com.yxcorp.gifshow.login.fragment.BindPhoneFragment" android:id="@id/bind_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/retrieve_confirm_divider" android:background="@color/light_gray" android:layout_width="fill_parent" android:layout_height="@dimen/login_line_divider_size" android:layout_marginLeft="@dimen/login_line_padding" android:layout_marginRight="@dimen/login_line_padding" />
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_default_color" android:gravity="center" android:id="@id/confirm_btn" android:background="@drawable/button2" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/login_line_padding" android:layout_marginTop="16.0dip" android:layout_marginRight="@dimen/login_line_padding" android:text="@string/ok" />
+</LinearLayout>

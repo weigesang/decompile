@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0000" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0001" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0002" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0003" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0004" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0005" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0006" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0007" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0008" />
+    <item android:duration="80" android:drawable="@mipmap/wbcf_eye_detect_0009" />
+</animation-list>

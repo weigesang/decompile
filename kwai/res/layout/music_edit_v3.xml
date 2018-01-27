@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/edit_fragment_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="5.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/voice_seek_bar_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size4" android:textColor="@drawable/edit_music_selector" android:gravity="center" android:id="@id/voice_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_voice" />
+            <com.yxcorp.widget.KwaiSeekBar android:id="@id/voice_seek_bar" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minHeight="15.0dip" style="@style/Theme.Widget.SeekBarNewEdit.Kwai" />
+        </LinearLayout>
+        <View android:id="@id/seekbar_fill" android:layout_width="10.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/music_seek_bar_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/text_size4" android:textColor="@drawable/edit_music_selector" android:gravity="center" android:id="@id/music_type_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_background" />
+            <com.yxcorp.widget.KwaiSeekBar android:id="@id/music_seek_bar" android:saveEnabled="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:minHeight="15.0dip" style="@style/Theme.Widget.SeekBarNewEdit.Kwai" />
+        </LinearLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/gallery_music_preview" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" style="@style/Theme.Preview.EditItemsList" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+import "log/client_common.proto";
+import "log/client_event.proto";
+import "log/client_stat.proto";
+
+option java_package = "com.kuaishou.protobuf.log";
+option objc_class_prefix = "KSU";
+
+// 传输单条日志
+//
+// 增加字段的话，需要在其对应的 Raw 版本中同步增加
+// 详见 RawBatchReportEvent 注释
+message ReportEvent {
+    uint64 client_timestamp = 1; // 客户端时间, Event或Stat发生时的时间, 而不是上传时的时间
+    uint64 client_increment_id = 2; // 客户端自增Id, 每新增一条日志+1, 必须是连续的, 用于校检数据完整性
+    string session_id = 3; // 会话id，设备冷启动或者切到后台超过5分钟再切回前台时，重新生成一个id
+    string time_zone = 4; // 时区 例：GMT+08:00 Asia/Shanghai
+    uint64 server_timestamp = 5; // 服务器接收日志的时间, 客户端请忽略
+    string server_hostname = 6; // 服务器主机名, 客户端请忽略
+    string explore_locale = 7; // 用户桶信息，服务端计算得出，客户端请忽略
+    CommonPackage common_package = 8; // 基础数据
+    EventPackage event_package = 9; // 事件有效数据
+    StatPackage stat_package = 10; // 统计有效数据
+    // 未来还可以添加监控等更多数据
+}
+
+// 详见 RawBatchReportEvent 注释
+message RawReportEvent {
+    uint64 client_timestamp = 1;
+    uint64 client_increment_id = 2;
+    string session_id = 3;
+    string time_zone = 4;
+    uint64 server_timestamp = 5;
+    string server_hostname = 6;
+    string explore_locale = 7;
+    CommonPackage common_package = 8;
+    RawEventPackage event_package = 9;
+    RawStatPackage stat_package = 10;
+
+
+}
+
+// 批量传输, 目前仅对客户端开放批量上传接口
+//
+// 增加字段的话，需要在其对应的 Raw 版本中同步增加
+// 详见 RawBatchReportEvent 注释
+message BatchReportEvent {
+    repeated ReportEvent event = 1;
+}
+
+// 为了解决 client log 频繁的小变动，后端都要更新 API 服务的问题
+// API 层尽量只解析需要解析的字段，而对于不需要解析的字段，则原样透传给数据层
+//
+// 这样需要在顶层，就和客户端使用版本分开，使用 Raw 版本
+// 对于需要解析的子对象，仍然保留
+// 对于不需要解析的子对象，直接使用 bytes 来接收，原样透传不关心其细节改动
+//
+// 对于包含 Raw 版本的对象，需要在变更时，同步修改其 Raw 版本协议
+// 只有被包含在 Raw 版本链条中的改动，才需要发布 API 服务
+message RawBatchReportEvent {
+    repeated RawReportEvent event = 1;
+}

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countrys">
+        <item>\#af_93 Afeganistão +93</item>
+        <item>\#al_355 Albânia +355</item>
+        <item>\#dz_213 Argélia +213</item>
+        <item>\#ad_376 Andorra +376</item>
+        <item>\#ao_244 Angola +244</item>
+        <item>\#ai_1264 Anguilla +1264</item>
+        <item>\#ag_1268 Antígua e Barbuda +1268</item>
+        <item>\#ar_54 Argentina +54</item>
+        <item>\#am_374 Armênia +374</item>
+        <item>\#aw_297 Aruba +297</item>
+        <item>\#sh_247 Ilha de Ascensão +247</item>
+        <item>\#au_61 Austrália +61</item>
+        <item>\#at_43 Áustria +43</item>
+        <item>\#az_994 Azerbaijão +994</item>
+        <item>\#bs_1242 Bahamas +1242</item>
+        <item>\#bh_973 Bahrein +973</item>
+        <item>\#bd_880 Bangladesh +880</item>
+        <item>\#bb_1246 Barbados +1246</item>
+        <item>\#by_375 Belarus +375</item>
+        <item>\#be_32 Bélgica +32</item>
+        <item>\#bz_501 Belize +501</item>
+        <item>\#bj_229 Benin +229</item>
+        <item>\#bm_1441 Bermuda +1441</item>
+        <item>\#bt_975 Butão +975</item>
+        <item>\#bo_591 Bolívia +591</item>
+        <item>\#ba_387 Bósnia e Herzegovina +387</item>
+        <item>\#bw_267 Botsuana +267</item>
+        <item>\#br_55 Brasil +55</item>
+        <item>\#vg_1284 Ilhas Virgens Britânicas +1284</item>
+        <item>\#bn_673 Brunei +673</item>
+        <item>\#bg_359 Bulgária +359</item>
+        <item>\#bf_226 Burkina Faso +226</item>
+        <item>\#mm_95 Myanmar +95</item>
+        <item>\#bi_257 Burundi +257</item>
+        <item>\#kh_855 Camboja +855</item>
+        <item>\#cm_237 Camarões +237</item>
+        <item>\#ca_1 Canadá +1</item>
+        <item>\#cv_238 Cabo Verde +238</item>
+        <item>\#bq_599 Países Baixos Caribenhos +599</item>
+        <item>\#ky_1345 Ilhas Cayman +1345</item>
+        <item>\#td_235 Chade +235</item>
+        <item>\#cl_56 Chile +56</item>
+        <item>\#cn_86 China +86</item>
+        <item>\#co_57 Colômbia +57</item>
+        <item>\#mp_1670 Commonwealth de Ilhas Mariana do Norte +1670</item>
+        <item>\#km_269 Ilhas Comores +269</item>
+        <item>\#cg_242 Congo +242</item>
+        <item>\#ck_682 Ilhas Cook +682</item>
+        <item>\#cr_506 Costa Rica +506</item>
+        <item>\#hr_385 Croácia +385</item>
+        <item>\#cu_53 Cuba +53</item>
+        <item>\#cy_357 Chipre +357</item>
+        <item>\#cz_420 Tcheco +420</item>
+        <item>\#yl_42 Checoslováquia +42</item>
+        <item>\#cd_243 República Democrática do Congo +243</item>
+        <item>\#dk_45 Dinamarca +45</item>
+        <item>\#io_246 Diego Garcia +246</item>
+        <item>\#dj_253 Djibuti +253</item>
+        <item>\#ec_593 Equador +593</item>
+        <item>\#eg_20 Egito +20</item>
+        <item>\#sv_503 El Salvador +503</item>
+        <item>\#gq_240 Guiné Equatorial +240</item>
+        <item>\#er_291 Eritreia +291</item>
+        <item>\#ee_372 Estônia +372</item>
+        <item>\#et_251 Etiópia +251</item>
+        <item>\#fk_500 Ilhas Malvinas +500</item>
+        <item>\#fo_298 Ilhas Faroés +298</item>
+        <item>\#fm_691 Estados Federados da Micronésia +691</item>
+        <item>\#kn_1869 Federação de São Cristóvão e Névis +1869</item>
+        <item>\#fj_679 Fiji +679</item>
+        <item>\#fi_358 Finlândia +358</item>
+        <item>\#fr_33 França +33</item>
+        <item>\#gf_594 Guiana Francesa +594</item>
+        <item>\#pf_689 Polinésia Francesa +689</item>
+        <item>\#ge_995 Geórgia +995</item>
+        <item>\#de_49 Alemanha +49</item>
+        <item>\#gh_233 Gana +233</item>
+        <item>\#gi_350 Gibraltar +350</item>
+        <item>\#gr_30 Grécia +30</item>
+        <item>\#gl_299 Groenlândia+299</item>
+        <item>\#gd_1473 Granada +1473</item>
+        <item>\#gp_590 Guadalupe +590</item>
+        <item>\#gu_1671 Guam +1671</item>
+        <item>\#gt_502 Guatemala +502</item>
+        <item>\#gn_224 Guiné +224</item>
+        <item>\#gy_592 Guiana +592</item>
+        <item>\#ht_509 Haiti +509</item>
+        <item>\#hn_504 Honduras +504</item>
+        <item>\#hk_852 Hong Kong +852</item>
+        <item>\#hu_36 Hungria +36</item>
+        <item>\#is_354 Islândia +354</item>
+        <item>\#in_91 Índia +91</item>
+        <item>\#id_62 Indonésia +62</item>
+        <item>\#ir_98 Irã +98</item>
+        <item>\#iq_964 Iraque +964</item>
+        <item>\#ie_353 Irlanda +353</item>
+        <item>\#il_972 Israel +972</item>
+        <item>\#it_39 Itália +39</item>
+        <item>"\#ci_225 Côte d'Ivoire +225"</item>
+        <item>\#jm_1876 Jamaica +1876</item>
+        <item>\#jp_81 Japão +81</item>
+        <item>\#jo_962 Jordânia +962</item>
+        <item>\#kz_7 Cazaquistão +7</item>
+        <item>\#ke_254 Quênia +254</item>
+        <item>\#ki_686 Kiribati +686</item>
+        <item>\#kw_965 Kuwait +965</item>
+        <item>\#kg_996 Quirguistão +996</item>
+        <item>\#la_856 Laos +856</item>
+        <item>\#lv_371 Letônia +371</item>
+        <item>\#lb_961 Líbano +961</item>
+        <item>\#ls_266 Lesoto +266</item>
+        <item>\#lr_231 Libéria +231</item>
+        <item>\#lt_370 Lituânia +370</item>
+        <item>\#lu_352 Luxemburgo +352</item>
+        <item>\#ma_212 Marrocos +212</item>
+        <item>\#mo_853 Macau +853</item>
+        <item>\#mk_389 Macedônia +389</item>
+        <item>\#mg_261 Madagascar +261</item>
+        <item>\#mw_265 Malaui +265</item>
+        <item>\#my_60 Malásia +60</item>
+        <item>\#mv_960 Maldivas +960</item>
+        <item>\#ml_223 Mali +223</item>
+        <item>\#mt_356 Malta +356</item>
+        <item>\#mh_692 Ilhas Marshall +692</item>
+        <item>\#mq_596 Martinica +596</item>
+        <item>\#mu_230 Maurício +230</item>
+        <item>\#km_269 Mayotte +269</item>
+        <item>\#mx_52 México +52</item>
+        <item>\#md_373 Moldova +373</item>
+        <item>\#mc_377 Mônaco +377</item>
+        <item>\#mn_976 Mongólia +976</item>
+        <item>\#me_382 Montenegro +382</item>
+        <item>\#ms_1664 Montserrat +1664</item>
+        <item>\#mz_258 Moçambique +258</item>
+        <item>\#na_264 Namíbia +264</item>
+        <item>\#nr_674 Nauru +674</item>
+        <item>\#np_977 Nepal +977</item>
+        <item>\#nl_31 Países Baixos +31</item>
+        <item>\#nc_687 Nova Caledônia +687</item>
+        <item>\#nz_64 Nova Zelândia +64</item>
+        <item>\#ni_505 Nicarágua +505</item>
+        <item>\#ne_227 Níger +227</item>
+        <item>\#ng_234 Nigéria +234</item>
+        <item>\#nu_683 Niue +683</item>
+        <item>\#kp_850 Coreia do Norte +850</item>
+        <item>\#tl_670 Ilhas Mariana do Norte +670</item>
+        <item>\#no_47 Noruega +47</item>
+        <item>\#om_968 Omã +968</item>
+        <item>\#pk_92 Paquistão +92</item>
+        <item>\#pw_680 Palau +680</item>
+        <item>\#ps_970 Palestina +970</item>
+        <item>\#pa_507 Panamá +507</item>
+        <item>\#pg_675 Papua Nova Guiné +675</item>
+        <item>\#py_595 Paraguai +595</item>
+        <item>\#pe_51 Conhaque +51</item>
+        <item>\#ph_63 Filipinas +63</item>
+        <item>\#pl_48 Polônia +48</item>
+        <item>\#pt_351 Portugal +351</item>
+        <item>\#li_423 Principado de Liechtenstein +423</item>
+        <item>\#qa_974 Catar +974</item>
+        <item>\#ss_211 República do Sudão do Sul +211</item>
+        <item>\#tt_1868 República de Trinidad e Tobago +1868</item>
+        <item>\#gm_220 República da Gâmbia +220</item>
+        <item>\#re_262 Ilha Reunião +262</item>
+        <item>\#ro_40 Romênia +40</item>
+        <item>\#ru_7 Rússia +7</item>
+        <item>\#rw_250 Ruanda +250</item>
+        <item>\#sh_290 Santa Helena +290</item>
+        <item>\#lc_1758 Santa Lúcia +1758</item>
+        <item>\#pm_508 São Pedro e Miquelon +508</item>
+        <item>\#vc_1784 São Vicente e Granadinas +1784</item>
+        <item>\#ws_685 Samoa +685</item>
+        <item>\#sm_378 San Marino +378</item>
+        <item>\#st_239 São Tomé e Príncipe +239</item>
+        <item>\#sa_966 Arábia Saudita +966</item>
+        <item>\#rs_381 Sérvia +381</item>
+        <item>\#sc_248 Seychelles +248</item>
+        <item>\#sl_232 Serra Leoa +232</item>
+        <item>\#sg_65 Cingapura +65</item>
+        <item>\#cw_599 Sint Maarten +599</item>
+        <item>\#sk_421 Eslovaco +421</item>
+        <item>\#si_386 Eslovênia +386</item>
+        <item>\#sb_677 Ilhas Salomão +677</item>
+        <item>\#so_252 Somália +252</item>
+        <item>\#za_27 África do Sul +27</item>
+        <item>\#kr_82 Coreia +82</item>
+        <item>\#es_34 Espanha +34</item>
+        <item>\#lk_94 Sri Lanka +94</item>
+        <item>\#ly_218 Líbia +218</item>
+        <item>\#sd_249 Sudão +249</item>
+        <item>\#sr_597 Suriname +597</item>
+        <item>\#sz_268 Suazilândia +268</item>
+        <item>\#se_46 Suécia +46</item>
+        <item>\#ch_41 Suíça +41</item>
+        <item>\#sy_963 Síria +963</item>
+        <item>\#tw_886 Taiwan +886</item>
+        <item>\#tj_992 Tadjiquistão +992</item>
+        <item>\#tz_255 Tanzânia +255</item>
+        <item>\#th_66 Tailândia +66</item>
+        <item>\#cf_236 República Centro-Africana +236</item>
+        <item>\#dm_1767 Comunidade da Dominica +1767</item>
+        <item>\#ga_241 República Gabonesa +241</item>
+        <item>\#mr_222 República Islâmica da Mauritânia +222</item>
+        <item>\#gw_245 República da Guiné-Bissau +245</item>
+        <item>\#sn_221 República do Senegal +221</item>
+        <item>\#tn_216 Tunísia +216</item>
+        <item>\#tg_228 Togo +228</item>
+        <item>\#tk_690 Tokelau +690</item>
+        <item>\#to_676 Tonga +676</item>
+        <item>\#tr_90 Turquia +90</item>
+        <item>\#tm_993 Turcomenistão +993</item>
+        <item>\#tc_1649 Ilhas Turks e Caicos +1649</item>
+        <item>\#tv_688 Tuvalu +688</item>
+        <item>\#ug_256 Uganda +256</item>
+        <item>\#ua_380 Ucrânia +380</item>
+        <item>\#ae_971 Emirados Árabes Unidos +971</item>
+        <item>\#gb_44 Reino Unido +44</item>
+        <item>\#vi_1340 Ilhas Virgens dos Estados Unidos +1340</item>
+        <item>\#us_1 Estados Unidos +1</item>
+        <item>\#uy_598 Uruguai +598</item>
+        <item>\#uz_998 Uzbequistão +998</item>
+        <item>\#vu_678 Vanuatu +678</item>
+        <item>\#ve_58 Venezuela +58</item>
+        <item>\#vn_84 Vietnã +84</item>
+        <item>\#wf_681 Ilhas Wallis e Futuna +681</item>
+        <item>\#ye_967 Iêmen +967</item>
+        <item>\#zm_260 Zâmbia +260</item>
+        <item>\#zw_263 Zimbábue +263</item>
+    </string-array>
+</resources>

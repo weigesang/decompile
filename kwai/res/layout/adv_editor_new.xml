@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/top_section" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include layout="@layout/kwai_title_default" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/preview_container" android:background="@color/surface_color1_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/edit_panel" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_marginTop="5.0dip" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/text_button" android:text="@string/text" android:drawableTop="@drawable/adv_edit_text" style="@style/Theme.Widget.GroupButton" />
+        <TextView android:id="@id/sticker_button" android:text="@string/decoration" android:drawableTop="@drawable/adv_edit_decoration" style="@style/Theme.Widget.GroupButton" />
+        <TextView android:id="@id/range_delete_button" android:text="@string/crop" android:drawableTop="@drawable/adv_edit_filter" style="@style/Theme.Widget.GroupButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/edit_content" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="55.0dip" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/text_box" android:layout_width="fill_parent" android:layout_height="@dimen/adv_edit_new_box_height" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default">
+            <android.support.v7.widget.RecyclerView android:id="@id/text_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/sticker_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/adv_edit_new_box_height">
+            <android.support.v7.widget.RecyclerView android:id="@id/decoration_gallery" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center|left" android:id="@id/range_skip_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/adv_edit_new_box_height">
+            <ImageView android:id="@id/range_skip_undo" android:background="@drawable/background_round_corner_grey" android:layout_width="@dimen/adv_edit_new_box_height" android:layout_height="@dimen/adv_edit_new_box_height" android:layout_marginLeft="10.0dip" android:src="@drawable/button_pencil_undo" android:scaleType="center" />
+            <ImageView android:id="@id/range_skip_add" android:background="@drawable/background_round_corner_grey" android:layout_width="@dimen/adv_edit_new_box_height" android:layout_height="@dimen/adv_edit_new_box_height" android:layout_marginLeft="10.0dip" android:src="@drawable/adv_edit_crop" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/time_line_container" android:background="#ffffffff" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/edit_content">
+        <com.yxcorp.gifshow.widget.adv.AdvEditTimelineCoreView android:id="@id/qrange_core_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

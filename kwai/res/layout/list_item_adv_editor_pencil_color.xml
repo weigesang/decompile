@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="30.0dip" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.makeramen.roundedimageview.RoundedImageView android:layout_gravity="center_vertical" android:id="@id/pencil_color_image" android:layout_width="fill_parent" android:layout_height="30.0dip" app:riv_oval="true" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/pencil_color_seclected_image" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="30.0dip" android:src="@drawable/edit_img_brush_color_sure" android:scaleType="fitXY" />
+</FrameLayout>

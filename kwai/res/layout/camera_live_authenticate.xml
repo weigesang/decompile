@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:background="@color/surface_color1_normal" layout="@layout/kwai_title_default" />
+    <com.yxcorp.gifshow.camera.widget.CameraView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/title_root" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/take_picture_layout" android:background="@color/surface_color1_normal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/record_action_bar_height" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/take_picture_btn" android:background="@drawable/button_capture_image" android:clickable="true" android:onClick="onClick" style="@style/Theme.CameraCaptureButton" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/camera_flash_bar_root" android:layout_width="fill_parent" android:layout_height="@dimen/record_flash_bar_height" android:layout_above="@id/take_picture_layout">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ToggleButton android:id="@id/button_photoflash" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:textOn="" android:textOff="" />
+            <ToggleButton android:layout_gravity="center|left" android:id="@id/button_photoflash_icon" android:background="@drawable/button_photoflash_black" android:clickable="false" android:longClickable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="right" android:id="@id/button_switch_camera_wrapper" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageButton android:id="@id/button_switch_camera" android:background="@null" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/button_switchcam_black" android:onClick="onClick" android:contentDescription="@string/switch_cam" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

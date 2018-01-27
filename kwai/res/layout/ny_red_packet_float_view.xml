@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="right" android:id="@id/red_packet_mark" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="80.0dip" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/background_view_normal" android:background="@drawable/ny_red_packet_float_btn_bg" android:layout_width="@dimen/red_packet_float_tips_view_size" android:layout_height="@dimen/red_packet_float_tips_view_size" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@id/state_view" android:background="@drawable/ny_red_packet_float_tips_background" android:layout_width="33.0dip" android:layout_height="33.0dip" android:layout_marginLeft="33.0dip" android:layout_marginTop="22.0dip">
+            <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" android:scaleType="centerCrop" app:roundAsCircle="true" />
+            <View android:id="@id/line_background_view" android:background="@drawable/ny_red_packet_float_tips_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="2.0dip" />
+            <View android:id="@id/open_icon_view" android:background="@drawable/ny_redpacket_icon_open_yellow" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="86.5dip" android:layout_marginTop="30.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/page_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <View android:id="@id/alert_dialog_indicator_divider" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <View android:id="@id/alert_dialog_cancel_divider" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <Button android:textSize="@dimen/dialog_list_item_text_size" android:textColor="@color/default_link_color" android:gravity="center" android:id="@id/cancel_button" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height" android:text="@string/cancel" />
+</LinearLayout>

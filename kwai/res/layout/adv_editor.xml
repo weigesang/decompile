@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/surface_color1_normal" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/top_section" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/adv_edit_box_height" android:layout_above="@id/edit_panel">
+        <include layout="@layout/kwai_title_default" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <com.yxcorp.gifshow.widget.ImageEditor android:id="@id/image_editor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <FrameLayout android:paddingTop="@dimen/adv_edit_common_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView android:id="@id/video_frames" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <ImageView android:id="@id/frame" android:layout_width="@dimen/adv_edit_image_width_portrait" android:layout_height="@dimen/adv_edit_image_height" android:layout_marginLeft="10.0dip" android:src="@drawable/adv_edit_photo_border" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/text_box" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="15.0dip" android:layout_marginRight="@dimen/margin_default" android:layout_marginBottom="10.0dip" android:layout_above="@id/edit_panel">
+        <android.support.v7.widget.RecyclerView android:id="@id/text_gallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/decoration_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/adv_edit_box_height" android:layout_above="@id/edit_panel">
+        <android.support.v7.widget.RecyclerView android:id="@id/decoration_gallery" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <include android:id="@id/pencil_color_box" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/edit_panel" layout="@layout/adv_editor_pencil_box" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/edit_panel" android:layout_width="fill_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/text_button" android:text="@string/text" android:drawableTop="@drawable/adv_edit_text" style="@style/Theme.Widget.GroupButton" />
+        <TextView android:id="@id/decoration_button" android:text="@string/decoration" android:drawableTop="@drawable/adv_edit_decoration" style="@style/Theme.Widget.GroupButton" />
+        <TextView android:id="@id/pencil_color_button" android:text="@string/pencil" android:drawableTop="@drawable/adv_edit_pencil" style="@style/Theme.Widget.GroupButton" />
+        <TextView android:id="@id/filter_button" android:text="@string/filter_photos" android:drawableTop="@drawable/adv_edit_filter" style="@style/Theme.Widget.GroupButton" />
+    </LinearLayout>
+</RelativeLayout>

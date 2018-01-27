@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:gravity="center" android:id="@id/right_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="?actionbarTitleTextSize" android:textColor="?actionbarTitleTextColor" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:singleLine="true" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerInParent="true" app:textSizeAdjustable="true" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    </com.yxcorp.gifshow.widget.KwaiActionBar>
+    <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" layout="@layout/line_divider_grey" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff303030" android:gravity="center" android:id="@id/select_friend_description_textview" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_below="@id/title_divider" />
+    <include android:id="@id/select_friend_description_divider_view" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/select_friend_description_textview" layout="@layout/line_divider_grey" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/share_divider" android:layout_below="@id/select_friend_description_divider_view" />
+    <include android:id="@id/share_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_above="@id/share_layout" layout="@layout/line_divider_grey" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/share_layout" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/share_wechat_layout" android:background="@drawable/button2" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <View android:background="@drawable/friends_btn_weachat_normal" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sf2018_send_to_wechat_friends" android:singleLine="true" app:textSizeAdjustable="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/share_qq_layout" android:background="@drawable/button6" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+            <View android:background="@drawable/friends_btn_qq_normal" android:layout_width="25.0dip" android:layout_height="25.0dip" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="15.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/sf2018_send_to_qq_friends" android:singleLine="true" app:textSizeAdjustable="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/upload_retry_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_below="@id/title_divider" layout="@layout/sf2018_retry_layout" />
+</RelativeLayout>

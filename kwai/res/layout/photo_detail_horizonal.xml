@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root" android:background="?contentBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/photo_label" layout="@layout/list_item_photo_detail_horizontal" />
+    <FrameLayout android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/photo_fragment_top_margin" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/photo_editor_holder_height" android:layout_alignParentBottom="true" layout="@layout/photo_detail_bottom" />
+    <View android:id="@id/photo_detail_title_background" android:background="@drawable/background_photo_toolbar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    <RelativeLayout android:id="@id/title_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/kwai_title_photo" />
+        <include android:id="@id/title_divider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" layout="@layout/line_divider_grey" />
+    </RelativeLayout>
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/swipe_photo_thumb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

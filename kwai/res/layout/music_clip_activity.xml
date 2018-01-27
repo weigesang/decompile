@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_root" layout="@layout/title_bar_music_clip" />
+    <View android:background="#19ffffff" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/title_root" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:id="@id/foreground" android:background="#80000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/music_preview_bar" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true" layout="@layout/music_preview_bar" />
+    <RelativeLayout android:id="@id/seek_bar_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="25.0dip" android:layout_above="@id/music_preview_bar">
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_default_color" android:id="@id/time_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="@color/text_default_color" android:gravity="left" android:id="@id/time_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <SeekBar android:id="@id/clip_seek_bar_fake" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="10000" android:thumb="@null" android:layout_toLeftOf="@id/time_end" android:layout_toRightOf="@id/time_start" android:layout_centerVertical="true" style="@style/Theme.Widget.SeekBar.Pointer.MusicClipper" />
+        <SeekBar android:id="@id/clip_seek_bar" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="10000" android:progressDrawable="@drawable/background_seekbar_pointer_transparent" android:layout_toLeftOf="@id/time_end" android:layout_toRightOf="@id/time_start" android:layout_centerVertical="true" style="@style/Theme.Widget.SeekBar.Pointer.MusicClipper" />
+        <SeekBar android:id="@id/play_seek_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="10000" android:layout_toLeftOf="@id/time_end" android:layout_toRightOf="@id/time_start" android:layout_centerVertical="true" style="@style/Theme.Widget.SeekBar.Pointer.MusicPlayer" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/lrc_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_marginBottom="-30.0dip" android:layout_above="@id/seek_bar_container" android:layout_below="@id/title_root">
+        <com.yxcorp.gifshow.widget.lrc.LyricsView android:id="@id/lrc_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" lrc:lrcHighlightColor="#fff2a670" lrc:lrcColor="#ffffffff" lrc:lrcTextSize="@dimen/text_size_16" lrc:lrcPadding="8.0dip" lrc:lrcEnableGradient="true" xmlns:lrc="http://schemas.android.com/apk/res-auto" />
+        <View android:id="@id/lrc_timeline" android:background="@drawable/dash_line_orange" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_size_10" android:textColor="#ffffffff" android:id="@id/lrc_time" android:background="@drawable/button12" android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="5.0dip" android:layout_above="@id/lrc_timeline" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yxcorp.plugin.live.entry.ShootCoverLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.camera.widget.CameraView android:id="@id/camera_preview_view" android:layout_width="1.0dip" android:layout_height="1.0dip" android:contentDescription="preview_for_live" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color_white" android:layout_gravity="center" android:id="@id/magic_emoji_tips_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginBottom="52.0dip" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center" android:id="@id/camera_magic_emoji" android:clipChildren="false" android:layout_width="60.0dip" android:layout_height="60.0dip">
+                <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/camera_magic_emoji_btn" android:background="@drawable/camera_button_round_background_dark" android:src="@drawable/camera_btn_magic_emoji" android:scaleType="fitCenter" android:contentDescription="magic_face_for_live" style="@style/Theme.CameraActionButtonFullScreen" />
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="100.0dip" android:layout_height="100.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/shoot_cover_iv" android:layout_width="75.0dip" android:layout_height="75.0dip" android:src="@drawable/shoot_image_btn" android:scaleType="fitXY" android:contentDescription="shoot_cover_iv" />
+        </FrameLayout>
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/shoot_cover_layout" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="25.0dip" android:layout_above="@id/action_bar">
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_17" android:textColor="@color/live_shoot_cover_text_color" android:gravity="center" android:id="@id/shoot_cover_tv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_shoot_cover_tips" android:maxLines="1" app:textSizeAdjustable="true" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_17" android:textColor="@android:color/white" android:gravity="center" android:id="@id/time_shoot_cover_tv" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/live_time_shoot_cover" android:maxLines="1" app:textSizeAdjustable="true" />
+    </FrameLayout>
+    <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_17" android:textColor="@android:color/white" android:gravity="center" android:id="@id/shoot_cover_tips_tv" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="21.0dip" android:text="@string/live_shoot_cover_tips" android:layout_above="@id/action_bar" android:layout_centerHorizontal="true" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="1.5dip" />
+    <FrameLayout android:id="@id/shoot_cover_timer_mask" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="80.0sp" android:textColor="@color/text_color11_normal" android:layout_gravity="center" android:id="@id/countdown_time" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/no_face_tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/magicemoji_icon_undetected_normal" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_face_detected" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" />
+    </LinearLayout>
+</com.yxcorp.plugin.live.entry.ShootCoverLayout>

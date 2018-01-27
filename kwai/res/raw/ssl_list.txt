@@ -1,0 +1,7 @@
+{
+    "https": [
+        "apissl.gifshow.com",
+        "apissl.ksapisrv.com",
+        "apissl.kuaishou.com"
+    ]
+}

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/photo_desc_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/detail_player_message_layout" />
+    <View android:layout_width="wrap_content" android:layout_height="2.0dip" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoPanelLinkTextColor" android:autoLink="none" android:id="@id/magic_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="@dimen/margin_default" style="@style/Theme.Widget.Text" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoPanelSummaryTextColor" android:id="@id/recommend_reason_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" style="@style/Theme.Widget.Text" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoPanelLinkTextColor" android:gravity="center_vertical" android:autoLink="none" android:linksClickable="true" android:id="@id/music_tv" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/margin_default" style="@style/Theme.Widget.Text" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoPanelLinkTextColor" android:gravity="center_vertical" android:autoLink="none" android:linksClickable="true" android:id="@id/location_tv" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="2.0dip" android:layout_marginRight="@dimen/margin_default" style="@style/Theme.Widget.Text" />
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:id="@id/stat_label" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoLabelTextColor" android:autoLink="none" android:linksClickable="true" android:id="@id/label" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" style="@style/Theme.Widget.Text" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/stat_like" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_14" android:textColor="?PhotoPanelDescTextColor" android:autoLink="none" android:linksClickable="true" android:id="@id/number_like" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/stat_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:src="?PhotoCommentIcon" android:scaleType="centerInside" android:contentDescription="@string/comment" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/margin_default">
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textColor="?PhotoPanelDescTextColor" android:id="@id/comment_1" android:clickable="true" style="@style/Theme.ListItemDetail.Comment" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textColor="?PhotoPanelDescTextColor" android:id="@id/comment_2" android:clickable="true" style="@style/Theme.ListItemDetail.Comment" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textColor="?PhotoPanelDescTextColor" android:id="@id/comment_3" android:clickable="true" style="@style/Theme.ListItemDetail.Comment" />
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textColor="?PhotoPanelDescTextColor" android:id="@id/more_comments" android:clickable="true" style="@style/Theme.ListItemDetail.Comment" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="?dividerColor" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/photo_space" />
+</LinearLayout>

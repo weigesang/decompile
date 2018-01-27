@@ -1,0 +1,78 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+import "log/client_event.proto";
+
+option java_package = "com.kuaishou.protobuf.log.stat";
+option objc_class_prefix = "KSU";
+
+// 应用启动事件
+message LaunchEvent {
+    enum Source {
+        UNKNOWN_SOURCE = 0; // 未知
+        LAUNCHER = 1; // 桌面
+        NOTIFICATION_BAR = 2; // 废弃，不要用。
+        WEB_VIEW = 3; // 废弃，不要用
+        URI = 4; // 通过设置 uri 方式打开
+        APP = 5; // 其他 app 打开
+        PUSH = 6; // 从 Push 启动
+    }
+    enum Mode {
+        UNKNOWN_MODE = 0; // 未知
+        COLD = 1; // 冷启动
+        HOT = 2;  // 热启动，进程还在存活，界面已退出
+        RESUME = 3; // 恢复状态，进程存储，界面暂定状态恢复
+    }
+    Source source = 1; // 启动来源
+    bool cold = 2; // 是否冷启动
+    uint64 time_cost = 3; // 程序从启动到页面布局加载完成的时间
+    string detail = 4; // 启动的 uri 或者启动来源的参数，如果是从 push 启动，会是 push 的渠道，例如 xiaomi,  getui 等
+    string target = 5; // 具体启动的页面
+    uint64 framework_cost = 6; // 框架启动耗时 单位 ms
+    uint64 fetch_data_cost = 7; // 获取数据耗时 单位 ms
+    uint64 all_visible_cost = 8; // 当前页面加载出来耗时 单位 ms，例如现在的首页就是指第一屏所有封面的加载时间
+    uint64 element_count = 9;
+    bool use_cache = 10; // 是否使用了缓存
+    Mode mode = 11; // 启动的方式
+}
+
+// app离开时信息记录
+message AppUsageStatEvent {
+    uint64 app_use_duration = 1; // 应用的使用时长，单位 ms
+    uint32 item_count_scrolled = 2; // 用户已经滚动的条目数
+    uint32 screen_count_scrolled = 3; // 已经滚动多少个屏幕高度
+    UrlPackage last_url_package = 4; // 离开前停留的页面
+}
+
+// 应用异常事件
+message ExceptionEvent {
+    enum Type {
+        UNKNOWN_TYPE = 0; // 未知异常
+        CRASH = 1; // 程序crash，崩溃了
+        EXCEPTION = 2; // 程序出错，但是未crash
+        ANR = 3; // 主线程ANR，影响用户体验
+        NATIVE_CRASH = 4; // Android 占用， 非 JAVA 崩溃，用来和普通的 crash 区分
+    }
+    Type type = 1; // 异常类型
+    string message = 2; // 异常详情
+    UrlPackage url_package = 3; // 异常所在页面URL
+}
+
+
+// 每次组装时包含其中一条
+//
+// 增加字段的话，需要在其对应的 Raw 版本中同步增加
+// 详见 RawBatchReportEvent 注释
+message StatPackage {
+    LaunchEvent launch_event = 1; // 启动统计
+    AppUsageStatEvent app_usage_stat_event = 2; // 离开应用统计
+    ExceptionEvent exception_event = 3; // 异常
+}
+
+// 详见 RawBatchReportEvent 注释
+message RawStatPackage {
+    bytes launch_event = 1; // 启动统计
+    bytes app_usage_stat_event = 2; // 应用使用的统计
+    bytes exception_event = 3; // 异常
+}

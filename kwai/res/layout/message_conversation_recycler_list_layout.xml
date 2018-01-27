@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/text_color_white" android:gravity="center" android:id="@id/connect_prompt" android:background="#e6c6c6c6" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="@string/im_linking" />
+    <com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/editor_holder" android:layout_below="@id/connect_prompt" style="@style/Kwai.Widget.RefreshLayout">
+        <com.yxcorp.gifshow.recycler.widget.CustomRecyclerView style="@style/Kwai.Widget.RecyclerView" />
+    </com.yxcorp.gifshow.recycler.widget.CustomRefreshLayout>
+</RelativeLayout>

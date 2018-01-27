@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_switch_tab_width">230.0dip</dimen>
+</resources>

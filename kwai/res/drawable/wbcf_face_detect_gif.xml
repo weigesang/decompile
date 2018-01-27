@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@mipmap/wbcf_face_detect_0" />
+    <item android:duration="100" android:drawable="@mipmap/wbcf_face_detect_1" />
+    <item android:duration="100" android:drawable="@mipmap/wbcf_face_detect_2" />
+    <item android:duration="100" android:drawable="@mipmap/wbcf_face_detect_3" />
+    <item android:duration="100" android:drawable="@mipmap/wbcf_face_detect_4" />
+</animation-list>

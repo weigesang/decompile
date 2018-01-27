@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/background_round_corner_dialog" android:layout_width="260.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bind_photo_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/sf2018_landing_page_btn_close" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/bind_photo_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:src="@drawable/sf2018_bind_phone_img" android:scaleType="fitStart" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bind_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:text="@string/landing_page_bind_phone" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ff777777" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/bind_desc" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/sf2018_bind_phone_note" />
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="#ffffcd7a" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/bind_photo_button" android:background="@drawable/sf2018_bind_phone_btn" android:layout_width="160.0dip" android:layout_height="35.0dip" android:layout_marginTop="32.0dip" android:layout_marginBottom="29.0dip" android:text="@string/landing_page_bind_now" />
+</LinearLayout>

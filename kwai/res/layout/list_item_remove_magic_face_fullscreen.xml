@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="80.0dip" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/forbidden_magic_emoji" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="44.5dip" android:src="@drawable/camera_magic_emoji_nothing_new" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="#80ffffff" android:id="@id/magic_emoji_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="95.0dip" android:text="@string/none" android:layout_centerHorizontal="true" />
+</RelativeLayout>

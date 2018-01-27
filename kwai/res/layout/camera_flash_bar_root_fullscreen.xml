@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/camera_flash_bar_root" android:background="@drawable/background_camera_fullscreen_top" android:layout_width="fill_parent" android:layout_height="@dimen/record_flash_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/button_return" android:src="@drawable/live_nav_btn_close" android:contentDescription="@string/go_back" style="@style/RecordTopBar" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/button_photoflash" android:src="@drawable/button_camera_flash" style="@style/RecordTopBar" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/button_speed" android:src="@drawable/shoot_btn_speed_fullscreen" style="@style/RecordTopBar" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/button_switch_beauty" android:src="@drawable/button_capture_beautify" style="@style/RecordTopBar" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/button_switch_camera" android:src="@drawable/button_switchcam_black" android:contentDescription="@string/switch_cam" style="@style/RecordTopBar" />
+</LinearLayout>

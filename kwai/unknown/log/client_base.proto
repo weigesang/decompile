@@ -1,0 +1,90 @@
+syntax = "proto3";
+
+package kuaishou.log;
+
+option java_package = "com.kuaishou.protobuf.log";
+option objc_class_prefix = "KSU";
+
+// 三方平台
+enum ThirdPartyPlatform {
+    UNKNOWN_THIRD_PARTY = 0;
+    EMAIL = 1;
+    PHONE = 2;
+    WECHAT_TIMELINE = 3;
+    QQ_ZONE = 4;
+    WECHAT = 5;
+    QQ = 6;
+    SINA_WEIBO = 7;
+    FACEBOOK = 8;
+    TWITTER = 9;
+    WHATS_APP = 10;
+    MESSENGER = 11;
+    YOUTUBE = 12;
+    PINTEREST = 13;
+    KAKAOTALK = 14;
+    KIK = 15;
+    INSTAGRAM = 16;
+    VK = 17;
+    VIBER = 18;
+    LINE = 19;
+    BBM = 20;
+    GOOGLE = 21;
+    NAVER = 22;
+}
+
+// 设备和用户Id
+message IdentityPackage {
+    string device_id = 1; // 设备Id, 唯一标识一台设备
+    string user_id = 2; // 用户Id, 唯一标识一个用户
+    string iu_id = 3; // 数盟sdk获取到的设备Id, 唯一标识一台设备(仅用于安卓)
+
+}
+
+// 设备基础信息
+message DevicePackage {
+    string os_version = 1; // 操作系统版本
+    string model = 2; // 机型
+}
+
+// 网络信息
+message NetworkPackage {
+    enum Type {
+        UNKNOWN_NETWORK = 0; // 未知
+        NOT_CONNECTED = 1; // 网络处于关闭状态
+        WIFI = 2; // WIFI网络
+        MOBILE_4G = 3; // 移动网络, 4G
+        MOBILE_3G = 4; // 移动网络, 3G
+        MOBILE_2G = 5; // 移动网络, 2G
+        MOBILE_UNKNOWN = 6; // 未识别出的移动网络类型
+    }
+    Type type = 1; // 网络类型
+    string isp = 2; // 运营商
+    string ip = 3; // 外网IP地址
+}
+
+// 地理位置信息
+message LocationPackage {
+    string country = 1; // 国家
+    string province = 2; // 省份/自治区/州
+    string city = 3; // 城市
+    string county = 4; // 县/区域
+    string street = 5; // 街道
+    double latitude = 6; // 纬度
+    double longitude = 7; // 经度
+}
+
+// 应用安装信息
+message ApplicationPackage {
+    string package_name = 1; // 应用包名
+    string name = 2; // 应用名称
+    string version_name = 3; // 版本名
+    int32 version_code = 4; // 版本号
+    bool system = 5; // 是否系统App
+}
+
+// A/B测试实验
+message Experiment {
+    string name = 1; // 实验名称
+    string value = 2; // 实验分组
+}
+

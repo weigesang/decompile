@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/upload_rl" android:background="?wbcfFaceVerifyBgColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/uploadLine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:src="@mipmap/wbcf_upload_line" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/uploadFace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="160.0dip" android:src="@mipmap/wbcf_upload_face" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textColor="?wbcfUploadTextColor" android:gravity="center" android:id="@id/face_upload_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/wbcf_face_upload" android:layout_below="@id/uploadFace" android:layout_centerHorizontal="true" />
+    <com.webank.wbcloudfaceverify2.ui.component.UploadLoadingView android:id="@id/uploadPb" android:layout_width="wrap_content" android:layout_height="2.0dip" android:layout_marginLeft="120.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="120.0dip" android:layout_below="@id/face_upload_title" app:wbcfReachHeight="5.0dip" app:wbcfReachColor="#ff409eff" app:wbcfUnReachHeight="5.0dip" app:wbcfUnReachColor="#ff404040" />
+</RelativeLayout>

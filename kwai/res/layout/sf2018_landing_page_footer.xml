@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/sf2018_landing_page_bottom" android:paddingLeft="16.0dip" android:paddingTop="10.0dip" android:paddingRight="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/landing_page_received_withdraw_text" android:layout_gravity="bottom" android:id="@id/landing_page_received_withdraw_money_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sf2018_landing_page_withdraw" />
+            <TextView android:textSize="@dimen/text_size_23" android:textColor="@color/landing_page_received_withdraw_money_text" android:id="@id/landing_page_received_withdraw_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="-3.0dip" />
+            <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/landing_page_received_withdraw_money_text" android:layout_gravity="bottom" android:id="@id/landing_page_received_withdraw_money_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/sf2018_landing_yuan" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/landing_page_received_total_text" android:id="@id/landing_page_received_total_money_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sf2018_landing_sum_title" />
+            <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/landing_page_received_total_text" android:id="@id/landing_page_received_total_money" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/text_size_11" android:textColor="@color/landing_page_received_total_text" android:id="@id/landing_page_received_total_money_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sf2018_landing_yuan" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_size_15" android:textColor="@color/landing_page_received_withdraw_btn_text" android:gravity="center" android:id="@id/landing_page_withdraw" android:background="@drawable/sf2018_landing_page_btn_withdraw" android:paddingBottom="0.5dip" android:layout_width="75.5dip" android:layout_height="25.5dip" android:layout_marginTop="17.25dip" android:text="@string/landing_page_withdraw" android:layout_alignParentRight="true" />
+</RelativeLayout>

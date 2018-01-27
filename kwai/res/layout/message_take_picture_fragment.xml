@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/preview_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.yxcorp.gifshow.camera.widget.CameraView android:id="@id/preview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_size_17" android:textColor="@color/text_color_white" android:layout_gravity="center" android:id="@id/magic_emoji_tips_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" android:layout_centerInParent="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/no_face_tip_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/magicemoji_icon_undetected_normal" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_color_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_face_detected" android:shadowColor="@color/text_shadow_color" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="4.0" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/take_picture_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/photo_take_btn_margin_bottom" android:layout_alignParentBottom="true">
+        <TextView android:id="@id/take_picture_btn" android:background="@drawable/button_capture_image_white" android:clickable="true" android:layout_centerInParent="true" android:onClick="onClick" style="@style/Theme.CameraCaptureButton" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/camera_magic_emoji_btn" android:background="@drawable/camera_button_round_background_dark" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="38.0dip" android:src="@drawable/camera_btn_magic_emoji" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/capture_finish_layout" android:visibility="gone" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/photo_take_btn_margin_bottom" android:layout_alignParentBottom="true">
+        <FrameLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/reshoot_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/send_image_btn_back" />
+        </FrameLayout>
+        <FrameLayout android:clipChildren="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/send_image_iv" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/send_image_btn_confirm" />
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/camera_flash_bar_root" android:layout_width="fill_parent" android:layout_height="@dimen/record_flash_bar_height" android:layout_alignParentTop="true">
+        <RelativeLayout android:gravity="left" android:id="@id/button_close_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true">
+            <ImageButton android:id="@id/button_close" android:background="@null" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/live_nav_btn_close" android:onClick="onClick" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="right" android:id="@id/button_switch_camera_wrapper" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageButton android:id="@id/button_switch_camera" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/button_switchcam_black" android:onClick="onClick" android:contentDescription="@string/switch_cam" />
+        </RelativeLayout>
+        <FrameLayout android:id="@id/button_photoflash_wrapper" android:paddingLeft="10.0dip" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toLeftOf="@id/button_switch_camera_wrapper" android:layout_alignWithParentIfMissing="true">
+            <ToggleButton android:id="@id/button_photoflash" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="false" android:textOn="" android:textOff="" />
+            <ToggleButton android:layout_gravity="center" android:id="@id/button_photoflash_icon" android:background="@drawable/button_photoflash_black" android:clickable="false" android:longClickable="false" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="8.0dip" android:textOn="" android:textOff="" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/button_switch_beauty" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/button_capture_beautify" android:layout_toLeftOf="@id/button_photoflash_wrapper" android:layout_alignWithParentIfMissing="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/header_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/notice_wrap" android:padding="@dimen/margin_default" android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/reminder_list_item_min_height">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:src="@null" android:scaleType="fitXY" app:fadeDuration="0" app:roundAsCircle="true" style="@style/Theme.ReminderAvatar" />
+        <com.yxcorp.gifshow.widget.MultiLineEllipsizeTextView android:id="@id/comment" android:longClickable="false" android:layout_width="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="0.0dip" android:layout_weight="1.0" style="@style/Theme.ReminderText" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/accept_button" android:background="@drawable/button11" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_padding" android:minWidth="60.0dip" android:minHeight="25.0dip" style="@style/Theme.Widget.Button">
+            <ImageView android:id="@id/accept_icon" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:src="@drawable/profile_icon_follow" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_color5" android:gravity="center" android:id="@id/accept_tv" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accept" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/right_arrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/common_padding" android:src="@drawable/button_arrow_right" />
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="0.0dip" style="@style/Theme.ReminderImage" />
+    </LinearLayout>
+    <View android:id="@id/footer_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="60.0dip" />
+</LinearLayout>

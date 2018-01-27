@@ -1,0 +1,88 @@
+.class final Lcom/yxcorp/gifshow/message/NewMessagesFragment$i;
+.super Lcom/yxcorp/gifshow/recycler/d;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yxcorp/gifshow/message/NewMessagesFragment;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "i"
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/yxcorp/gifshow/recycler/d",
+        "<",
+        "Lcom/kwai/chat/messagesdk/sdk/internal/f/c;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field final e:Lcom/yxcorp/gifshow/entity/QUser;
+
+
+# direct methods
+.method public constructor <init>(Lcom/yxcorp/gifshow/entity/QUser;)V
+    .locals 0
+
+    .prologue
+    .line 1281
+    invoke-direct {p0}, Lcom/yxcorp/gifshow/recycler/d;-><init>()V
+
+    .line 1282
+    iput-object p1, p0, Lcom/yxcorp/gifshow/message/NewMessagesFragment$i;->e:Lcom/yxcorp/gifshow/entity/QUser;
+
+    .line 1283
+    return-void
+.end method
+
+.method static synthetic a(Lcom/yxcorp/gifshow/message/NewMessagesFragment$i;)Lcom/yxcorp/gifshow/activity/f;
+    .locals 1
+
+    .prologue
+    .line 1277
+    invoke-virtual {p0}, Lcom/yxcorp/gifshow/message/NewMessagesFragment$i;->j()Lcom/yxcorp/gifshow/activity/f;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method protected final synthetic b(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 3
+
+    .prologue
+    .line 1277
+    check-cast p1, Lcom/kwai/chat/messagesdk/sdk/internal/f/c;
+
+    .line 3154
+    iget-object v0, p0, Lcom/smile/gifmaker/a/b;->a:Landroid/view/View;
+
+    .line 2287
+    check-cast v0, Lcom/yxcorp/gifshow/image/KwaiImageView;
+
+    .line 2288
+    iget-object v1, p0, Lcom/yxcorp/gifshow/message/NewMessagesFragment$i;->e:Lcom/yxcorp/gifshow/entity/QUser;
+
+    sget-object v2, Lcom/yxcorp/gifshow/image/tools/HeadImageSize;->MIDDLE:Lcom/yxcorp/gifshow/image/tools/HeadImageSize;
+
+    invoke-virtual {v0, v1, v2}, Lcom/yxcorp/gifshow/image/KwaiImageView;->a(Lcom/yxcorp/gifshow/entity/QUser;Lcom/yxcorp/gifshow/image/tools/HeadImageSize;)V
+
+    .line 2289
+    new-instance v1, Lcom/yxcorp/gifshow/message/NewMessagesFragment$i$1;
+
+    invoke-direct {v1, p0, p1}, Lcom/yxcorp/gifshow/message/NewMessagesFragment$i$1;-><init>(Lcom/yxcorp/gifshow/message/NewMessagesFragment$i;Lcom/kwai/chat/messagesdk/sdk/internal/f/c;)V
+
+    invoke-virtual {v0, v1}, Lcom/yxcorp/gifshow/image/KwaiImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 1277
+    return-void
+.end method

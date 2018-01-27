@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_list_item" android:layout_width="fill_parent" android:layout_height="@dimen/add_fiend_list_item_height">
+        <ImageView android:id="@id/platform_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_black_color" android:id="@id/platform_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/sina_weibo" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_hint_black_color" android:id="@id/find_friends_in_contacts_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/find_friends_in_contacts" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/margin_default" android:layout_marginRight="@dimen/margin_default" android:src="@drawable/button_arrow_right" android:contentDescription="@string/sina_weibo" />
+    </LinearLayout>
+</LinearLayout>

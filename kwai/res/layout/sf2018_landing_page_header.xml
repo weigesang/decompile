@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/landing_page_banner" android:layout_width="fill_parent" android:layout_height="280.0dip">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/cover_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sf2018_landing_page_banner" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <FrameLayout android:id="@id/landing_page_award_info_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ViewSwitcher android:id="@id/vertical_marquee" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/landing_page_marquee" android:gravity="center" android:id="@id/landing_page_no_award_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/sf2018_landing_no_banner_note" />
+        </FrameLayout>
+        <include android:id="@id/landing_page_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true" layout="@layout/sf2018_landing_page_notice" />
+        <include android:id="@id/landing_page_error_notice" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_alignParentBottom="true" layout="@layout/sf2018_retry_layout" />
+        <include android:id="@id/landing_page_redpack_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/sf2018_landing_page_redpack_info" />
+    </RelativeLayout>
+    <include android:id="@id/landing_page_tab" layout="@layout/sf2018_landing_page_tab" />
+    <RelativeLayout android:id="@id/landing_page_placeholder" android:layout_width="fill_parent" android:layout_height="7.0dip">
+        <include layout="@layout/sf2018_landing_page_edge" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/landing_page_send_recyclerview_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/sf2018_landing_page_edge" />
+        <com.yxcorp.gifshow.fragment.RecommendUserRecyclerView android:id="@id/landing_page_send_recyclerview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/landing_page_right_edge" android:layout_toRightOf="@id/landing_page_left_edge" android:overScrollMode="never" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/landing_page_decorate" android:layout_width="fill_parent" android:layout_height="37.0dip">
+        <include layout="@layout/sf2018_landing_page_edge" />
+        <ImageView android:layout_width="43.5dip" android:layout_height="fill_parent" android:layout_marginLeft="22.0dip" android:src="@drawable/sf2018_landing_page_decoration_left" />
+        <ImageView android:layout_width="43.5dip" android:layout_height="fill_parent" android:layout_marginRight="22.0dip" android:src="@drawable/sf2018_landing_page_decorate_right" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/landing_page_divider" android:layout_width="fill_parent" android:layout_height="23.5dip">
+        <include layout="@layout/sf2018_landing_page_edge" />
+        <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/landing_page_divider_text" android:id="@id/landing_page_divider_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sf2018_landing_send_list_title" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="28.0dip" android:layout_toLeftOf="@id/landing_page_divider_text" android:layout_centerVertical="true">
+            <View android:id="@id/landing_page_divider_left" android:background="@color/landing_page_divider_line" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+            <ImageView android:id="@id/landing_page_divider_left_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sf2018_landing_page_dividing_line_head" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="28.0dip" android:layout_marginRight="22.0dip" android:layout_toRightOf="@id/landing_page_divider_text" android:layout_centerVertical="true">
+            <ImageView android:id="@id/landing_page_divider_right_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sf2018_landing_page_dividing_line_head" />
+            <View android:id="@id/landing_page_divider_right" android:background="@color/landing_page_divider_line" android:layout_width="0.0dip" android:layout_height="0.5dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

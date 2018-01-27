@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.widget.CustomFadeEdgeRecyclerView android:id="@id/gift_list_view" android:background="@drawable/live_bg_giftlist" android:paddingLeft="7.0dip" android:paddingTop="5.0dip" android:paddingRight="7.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/live_push_message_list_height" android:layout_marginRight="7.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentRight="true" android:overScrollMode="never" app:layout_widthPercent="39.999996%"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/cloud_face_verify_ll" android:background="?wbcfFaceVerifyBgColor" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.webank.wbcloudfaceverify2.ui.component.PreviewFrameLayout android:id="@id/previewLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+            <SurfaceView android:id="@id/id_detection_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+        </com.webank.wbcloudfaceverify2.ui.component.PreviewFrameLayout>
+        <RelativeLayout android:id="@id/background_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/id_card_frame_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@mipmap/wbcf_face_outline_bg" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/id_card_frame_iv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/shelter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+            <ImageView android:id="@id/face_verify_gif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="260.0dip" android:src="@drawable/wbcf_face_detect_gif" android:scaleType="centerCrop" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="24.0sp" android:textColor="?wbcfSdkBaseBlue" android:gravity="center_horizontal" android:id="@id/face_command" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/wbcf_keep_face_in" android:layout_centerHorizontal="true" android:lineSpacingMultiplier="1.2" />
+        <ImageView android:id="@id/reading_gif" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <LinearLayout android:id="@id/bottom_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_above="@id/reading_gif" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/lightIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wbcf_light" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/wbcf_white" android:id="@id/face_record_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wbcf_keep_bright" android:lineSpacingMultiplier="1.2" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

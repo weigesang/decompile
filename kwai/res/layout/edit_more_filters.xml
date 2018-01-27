@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/filter_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.0">
+        <FrameLayout android:id="@id/crop_container" android:layout_width="fill_parent" android:layout_height="@dimen/editor_item_height"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_12" android:textColor="@color/editor_nav_text_btn_color" android:gravity="center" android:layout_gravity="bottom|center" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/crop" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <ImageView android:layout_gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/edit_btn_crop" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/decoration_container" android:layout_width="fill_parent" android:layout_height="@dimen/editor_item_height"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_12" android:textColor="@color/editor_nav_text_btn_color" android:gravity="center" android:layout_gravity="bottom|center" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/decoration" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <ImageView android:layout_gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/edit_btn_sticker" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/text_container" android:layout_width="fill_parent" android:layout_height="@dimen/editor_item_height"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <com.yxcorp.gifshow.widget.StrokedTextView android:textSize="@dimen/text_size_12" android:textColor="@color/editor_nav_text_btn_color" android:gravity="center" android:layout_gravity="bottom|center" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/text" app:textStrokeColor="@color/live_message_stroke_color" app:textStrokeSize="2.0dip" xmlns:app="http://schemas.android.com/apk/res-auto" />
+            <ImageView android:layout_gravity="center|top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/edit_btn_text" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="bottom|center" android:id="@id/more_btn" android:background="@drawable/background_circle_take_photo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/edit_more_filter" android:scaleType="centerInside" />
+</FrameLayout>

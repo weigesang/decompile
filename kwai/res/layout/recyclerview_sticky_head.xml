@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/user_follow_list_item_title_text_size" android:textColor="@color/list_item_light_black" android:gravity="center_vertical" android:id="@id/follower_time_title" android:background="@color/list_item_gray" android:paddingLeft="@dimen/user_follow_list_item_title_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/recyclerview_sticky_head_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

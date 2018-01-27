@@ -1,0 +1,57 @@
+{
+  "result": 1,
+  "photo": {
+    "magicFaces": [
+      {
+        "image": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_kNLLhIP6DlA",
+        "version": 105,
+        "resource": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_54rjYkjsFNc.zip",
+        "id": 1203,
+        "name": "红包",
+        "imageUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_kNLLhIP6DlA"
+          }
+        ],
+        "resourceUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_54rjYkjsFNc.zip"
+          }
+        ]
+      }
+    ],
+    "bucket": 1,
+    "name": "红包表情",
+    "id": 54
+  },
+  "video": {
+    "magicFaces": [
+      {
+        "image": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_dKFEYG5Q5Zw",
+        "version": 40,
+        "resource": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_ztVKSjR36ic.zip",
+        "id": 1204,
+        "name": "小灯笼",
+        "imageUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_dKFEYG5Q5Zw"
+          }
+        ],
+        "resourceUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_ztVKSjR36ic.zip"
+          }
+        ],
+        "switchable": false
+      }
+    ],
+    "bucket": 1,
+    "name": "红包表情",
+    "id": 53
+  },
+  "host-name": "yun-s28.zw"
+}

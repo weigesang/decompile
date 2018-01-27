@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/record_layout" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="152.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:layout_gravity="center" android:id="@id/camera_magic_emoji" android:clipChildren="false" android:layout_width="60.0dip" android:layout_height="60.0dip">
+                <ImageView android:id="@id/camera_magic_emoji_btn" android:background="@drawable/camera_button_round_background_dark" android:src="@drawable/camera_btn_magic_emoji" android:scaleType="fitCenter" style="@style/Theme.CameraActionButtonFullScreen" />
+                <ImageView android:layout_gravity="center|right|top" android:id="@id/notify_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_magic_face_notify" />
+            </FrameLayout>
+        </FrameLayout>
+        <include android:layout_gravity="center" android:id="@id/record_btn_layout" android:layout_width="100.0dip" android:layout_height="100.0dip" layout="@layout/record_btn_fullscreen" />
+        <FrameLayout android:layout_gravity="center" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_weight="1.0">
+            <ImageButton android:id="@id/finish_record_btn" android:background="@drawable/camera_button_round_background_light" android:visibility="visible" android:src="@drawable/shoot_btn_done_fullscreen" style="@style/Theme.CameraActionButtonFullScreen" />
+            <ImageView android:id="@id/button_switch_music" android:background="@drawable/camera_button_round_background_dark" android:src="@drawable/shooting_btn_music_fullscreen" style="@style/Theme.CameraActionButtonFullScreen" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.yxcorp.gifshow.widget.record.DeleteSectionButton android:textSize="@dimen/text_size_15" android:textColor="@color/shoot_text_color_fullscreen" android:layout_gravity="center_horizontal" android:id="@id/stop_record_btn" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="19.5dip" android:text="@string/remove" android:drawableLeft="@drawable/shoot_btn_delete_fullscreen" />
+</LinearLayout>

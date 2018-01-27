@@ -1,0 +1,57 @@
+{
+  "result": 1,
+  "photo": {
+    "magicFaces": [
+      {
+        "image": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_3Ulo9mwkCGw",
+        "version": 88,
+        "resource": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_pOms1xOUM4o.zip",
+        "id": 1202,
+        "name": "阿哥发红包",
+        "imageUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_3Ulo9mwkCGw"
+          }
+        ],
+        "resourceUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_pOms1xOUM4o.zip"
+          }
+        ]
+      }
+    ],
+    "bucket": 1,
+    "name": "拜年表情",
+    "id": 54
+  },
+  "video": {
+    "magicFaces": [
+      {
+        "image": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_PCNUmztjMDk",
+        "version": 19,
+        "resource": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_H-zLSiQ14X8.zip",
+        "id": 1205,
+        "name": "年年有余",
+        "imageUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_img_PCNUmztjMDk"
+          }
+        ],
+        "resourceUrls": [
+          {
+            "cdn": "tx2.a.kwimgs.com",
+            "url": "https://tx2.a.kwimgs.com/udata/music/magic_face_res_H-zLSiQ14X8.zip"
+          }
+        ],
+        "switchable": false
+      }
+    ],
+    "bucket": 1,
+    "name": "拜年表情",
+    "id": 53
+  },
+  "host-name": "yun-s28.zw"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="@dimen/default_divider_size" />
+    <android.support.v7.widget.RecyclerView android:id="@id/share_platform" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="19.5dip" />
+    <View android:id="@id/operation_divider" android:background="@color/list_divider_default_color" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <android.support.v7.widget.RecyclerView android:id="@id/operation_recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginBottom="20.0dip" />
+    <View android:id="@id/alert_dialog_indicator_divider" android:background="@color/background_light" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <View android:id="@id/alert_dialog_cancel_divider" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <Button android:textSize="@dimen/dialog_list_item_text_size" android:textColor="@color/default_link_color" android:gravity="center" android:id="@id/cancel_button" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_list_item_height" android:text="@string/cancel" />
+</LinearLayout>

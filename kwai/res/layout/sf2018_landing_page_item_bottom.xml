@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/sf2018_landing_page_edge" />
+    <View android:id="@id/new_year_landing_page_tips_bottom" android:background="@drawable/sf2018_landing_page_item_bottom" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_alignParentBottom="true" />
+    <ProgressBar android:id="@id/progress" android:paddingBottom="30.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Theme.Widget.Loading.Small" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/new_year_landing_page_empty_frame" android:paddingBottom="24.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/new_year_landing_page_empty_icon" android:layout_width="110.0dip" android:layout_height="110.0dip" android:src="@drawable/sf2018_landing_page_empty_icon" />
+        <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/landing_page_empty_tip" android:id="@id/new_year_landing_page_empty_tip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dip" android:text="@string/landing_page_not_received_video" />
+    </LinearLayout>
+</RelativeLayout>

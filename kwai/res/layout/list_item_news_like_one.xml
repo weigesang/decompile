@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:longClickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/reminder_list_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/header_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_alignParentTop="true" />
+    <View android:id="@id/header_padding" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_below="@id/header_divider" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:layout_marginLeft="10.0dip" android:layout_below="@id/header_padding" android:layout_alignParentTop="false" app:roundAsCircle="true" style="@style/Theme.ReminderAvatar" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <com.yxcorp.gifshow.widget.EmojiTextView android:id="@id/comment" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/header_padding" style="@style/Theme.ReminderText" />
+    <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/photo" android:layout_marginRight="10.0dip" android:layout_toRightOf="@id/avatar" android:layout_below="@id/comment" style="@style/Theme.ReminderImage.news" />
+    <View android:id="@id/footer_divider" android:background="@color/divider_color_grey" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="10.0dip" android:layout_below="@id/photo" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yxcorp.gifshow.widget.KwaiActionBar android:id="@id/title_root" android:background="?actionbarBackground" android:layout_width="fill_parent" android:layout_height="?actionbarHeight">
+        <ImageButton android:id="@id/left_btn" android:background="@null" android:layout_width="?actionbarHeight" android:layout_height="?actionbarHeight" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/right_btn" android:background="@null" android:visibility="gone" android:layout_width="?actionbarHeight" android:layout_height="0.0dip" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <com.yxcorp.gifshow.widget.SizeAdjustableTextView android:textSize="@dimen/text_size_15" android:textColor="@color/nav_text_btn_color" android:gravity="center" android:id="@id/right_tv" android:background="@null" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tab_menu_qrcode_scan" android:maxLines="1" android:layout_alignParentRight="true" />
+        <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="?actionbarTitleTextSize" android:textColor="?actionbarTitleTextColor" android:gravity="center" android:id="@id/title_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/common_padding" android:layout_marginRight="@dimen/common_padding" android:maxLines="1" android:layout_toLeftOf="@id/right_btn" android:layout_toRightOf="@id/left_btn" android:layout_centerInParent="true" app:textSizeAdjustable="true" />
+    </com.yxcorp.gifshow.widget.KwaiActionBar>
+    <android.support.v4.widget.Space android:id="@id/container_top" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="@dimen/search_bar_height" android:layout_below="@id/title_root" />
+    <FrameLayout android:id="@id/banner_container_layout" android:background="@color/search_box_bgcolor" android:paddingBottom="@dimen/search_banner_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/container_top">
+        <com.yxcorp.gifshow.homepage.wiget.BannerViewPager android:id="@id/banner_container" android:layout_width="fill_parent" android:layout_height="56.0dip" />
+        <com.yxcorp.widget.viewpager.PageIndicator android:layout_gravity="bottom" android:id="@id/page_indicator" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_marginBottom="3.0dip" app:pageIndicatorSize="3.0dip" app:pageIndicatorMargin="5.0dip" app:pageIndicatorDrawable="@drawable/dot_banner_indicator" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/tabs_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/banner_container_layout">
+        <com.yxcorp.gifshow.log.widget.CommonLogViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="39.0dip" />
+        <com.yxcorp.gifshow.widget.PagerSlidingTabStrip android:id="@id/tabs" style="@style/tab_strip" />
+    </FrameLayout>
+    <include android:id="@id/search_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/title_root" layout="@layout/user_tag_search_layout" />
+</RelativeLayout>

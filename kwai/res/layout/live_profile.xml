@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/live_profile" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/top_empty" android:layout_width="fill_parent" android:layout_height="23.0dip" />
+    <LinearLayout android:orientation="vertical" android:background="@color/background_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="23.0dip">
+        <RelativeLayout android:id="@id/header_wrapper" android:background="@color/background_light" android:paddingLeft="107.0dip" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.yxcorp.plugin.live.widget.ConstrainLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/user_name_area" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/more_button">
+                <com.yxcorp.gifshow.widget.EmojiTextView android:textSize="@dimen/text_size_15" android:textColor="@color/text_black_color" android:id="@id/user_name" android:layout_width="wrap_content" android:maxLines="1" style="@style/Theme.ProfileTextView" />
+                <ImageView android:id="@id/admin_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:minWidth="20.0dip" />
+            </com.yxcorp.plugin.live.widget.ConstrainLinearLayout>
+            <ImageView android:id="@id/more_button" android:paddingLeft="@dimen/margin_default" android:paddingRight="@dimen/margin_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:src="@drawable/nav_btn_more_black" android:layout_alignParentRight="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/follow_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/margin_default" android:layout_below="@id/user_name_area">
+                <TextView android:id="@id/followers" android:layout_width="wrap_content" android:text="@string/follower" android:maxLines="1" style="@style/Theme.ProfileTextView" />
+                <View android:id="@id/follow_btn_split" android:background="@drawable/profile_icon_line_normal" android:layout_width="1.5dip" android:layout_height="14.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" style="@style/Theme.Widget.Text" />
+                <TextView android:id="@id/following" android:layout_width="wrap_content" android:text="@string/following" android:maxLines="1" style="@style/Theme.ProfileTextView" />
+            </LinearLayout>
+        </RelativeLayout>
+        <ScrollView android:id="@id/user_text_wrapper" android:background="@color/background_light" android:paddingLeft="@dimen/margin_default" android:paddingTop="15.0dip" android:paddingRight="@dimen/margin_default" android:paddingBottom="@dimen/margin_default" android:layout_width="fill_parent" android:layout_height="140.0dip" android:fadeScrollbars="false">
+            <com.yxcorp.gifshow.widget.EmojiTextView android:textColorHint="@color/text_hint_black_color" android:id="@id/user_text" android:hint="@string/empty_user_text" style="@style/Theme.ProfileTextView" />
+        </ScrollView>
+        <View android:id="@id/live_profile_operation_line" style="@style/Theme.Widget.DefaultDividerVertical" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/live_profile_operation_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/follow_container" android:layout_width="0.0dip" android:layout_height="@dimen/live_profile_button_height" android:layout_weight="1.0">
+                <ProgressBar android:layout_gravity="center" android:id="@id/loading_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Theme.Widget.Loading.Small" />
+                <com.yxcorp.gifshow.widget.DrawableCenterTextView android:textSize="@dimen/text_size_15" android:textColor="@drawable/live_profile_bottom_btn_text_color" android:gravity="center_vertical" android:id="@id/follow" android:background="@drawable/bg_list_item" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxLines="1" app:textSizeAdjustable="true" />
+            </FrameLayout>
+            <View android:id="@id/follow_divider" style="@style/Theme.Widget.DefaultDividerHorizontal" />
+            <com.yxcorp.gifshow.widget.DrawableCenterTextView android:textColor="@drawable/live_profile_bottom_btn_text_color" android:id="@id/profile_settings" android:background="@drawable/bg_list_item" android:text="@string/me_settings" android:drawableLeft="@drawable/live_profile_icon_edit" app:textSizeAdjustable="true" style="@style/Theme.Widget.LiveProfile.Button" />
+            <View android:id="@id/profile_settings_divider" style="@style/Theme.Widget.DefaultDividerHorizontal" />
+            <com.yxcorp.gifshow.widget.DrawableCenterTextView android:textColor="@drawable/live_profile_bottom_btn_text_color" android:id="@id/at_audience" android:background="@drawable/bg_list_item" android:text="@string/at_audience_he" android:drawableLeft="@drawable/live_profile_icon_at" app:textSizeAdjustable="true" style="@style/Theme.Widget.LiveProfile.Button" />
+            <View android:id="@id/at_audience_divider" style="@style/Theme.Widget.DefaultDividerHorizontal" />
+            <com.yxcorp.gifshow.widget.DrawableCenterTextView android:textColor="@drawable/live_profile_bottom_btn_text_color" android:id="@id/homepage" android:background="@drawable/bg_list_item" android:text="@string/live_user_page" android:drawableLeft="@drawable/live_profile_icon_home" app:textSizeAdjustable="true" style="@style/Theme.Widget.LiveProfile.Button" />
+            <View android:id="@id/homepage_divider" style="@style/Theme.Widget.DefaultDividerHorizontal" />
+            <com.yxcorp.gifshow.widget.DrawableCenterTextView android:textColor="@drawable/live_profile_bottom_btn_text_color" android:id="@id/live_chat_view" android:background="@drawable/bg_list_item" android:text="@string/start_live_chatting" android:drawableLeft="@drawable/live_profile_icon_record" app:textSizeAdjustable="true" style="@style/Theme.Widget.LiveProfile.Button" />
+            <View android:id="@id/live_chat_divider" style="@style/Theme.Widget.DefaultDividerHorizontal" />
+        </LinearLayout>
+        <View android:id="@id/overshoot_help_view" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.yxcorp.gifshow.image.KwaiImageView android:id="@id/avatar" android:background="@null" android:padding="0.0dip" android:clickable="true" android:layout_width="84.0dip" android:layout_height="84.0dip" android:layout_marginLeft="13.0dip" android:src="@drawable/profile_btn_avatar_secret" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:contentDescription="@string/avatar" avatar:roundAsCircle="true" xmlns:avatar="http://schemas.android.com/apk/res-auto" />
+        <ImageView android:id="@id/gender" android:background="@null" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/live_ico_data_notfilled_normal" android:scaleType="fitXY" android:layout_alignRight="@id/avatar" android:layout_alignBottom="@id/avatar" android:contentDescription="@string/gender" />
+        <ImageView android:id="@id/vip_badge" android:background="@null" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/profile_ico_v_normal" android:scaleType="fitXY" android:layout_toRightOf="@id/gender" android:layout_alignBottom="@id/gender" android:contentDescription="@string/gender" />
+    </RelativeLayout>
+</FrameLayout>

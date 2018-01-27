@@ -1,0 +1,11 @@
+{"com.yxcorp.gifshow.plugin.impl.shumeng.ShumengSDKPlugin":[{"className":"com.yxcorp.shumengsdk.ShumengSDKPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.qrcode.QRCodePlugin":[{"className":"com.yxcorp.plugin.qrcode.QRCodePluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.live.LivePlugin":[{"className":"com.yxcorp.plugin.live.LivePluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.magicemoji.MagicEmojiPaintHandler":[{"className":"com.yxcorp.plugin.magicemoji.MagicEmojiPaintHandlerImpl","minSdk":18}],"com.yxcorp.gifshow.plugin.impl.magicemoji.KSImageMovieWindowFilterHandler":[{"className":"com.yxcorp.plugin.magicemoji.KSImageMovieWindowFilterImpl","minSdk":18}],"com.yxcorp.gifshow.plugin.impl.magicemoji.MagicEmojiPlugin":[{"className":"com.yxcorp.plugin.magicemoji.MagicEmojiPluginImpl","minSdk":18},{"className":"com.yxcorp.plugin.magicemoji.LowVersionMagicEmojiPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.payment.PaymentPlugin":[{"className":"com.yxcorp.plugin.payment.PaymentPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.push.PushPlugin":[{"className":"com.yxcorp.gifshow.push.PushPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.roamcity.RoamCityPlugin":[{"className":"com.yxcorp.plugin.roamcity.RoamCityPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.map.MapPlugin":[{"className":"com.yxcorp.plugin.tencent.map.TencentMapPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.authorize.AuthorizePlugin":[{"className":"com.yxcorp.plugin.authorize.AuthorizePluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.webview.WebViewPlugin":[{"className":"com.yxcorp.gifshow.webview.WebViewPluginImpl","minSdk":1}]}
+{"com.yxcorp.gifshow.plugin.impl.login.LoginPlugin":[{"className":"com.yxcorp.gifshow.login.LoginPluginImpl","minSdk":1}]}

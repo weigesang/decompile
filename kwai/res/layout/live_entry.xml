@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/live_cover_imageview" android:background="@color/record_camera_bg_color" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+    <include android:id="@id/shoot_layout" layout="@layout/live_shoot_cover_layout" />
+    <include android:id="@id/show_layout" layout="@layout/live_show_cover_layout" />
+    <include android:id="@id/options_layout" layout="@layout/live_cover_options" />
+    <com.yxcorp.plugin.live.widget.LivePendantView android:id="@id/live_pendant" android:visibility="gone" android:layout_width="@dimen/live_pendant_width" android:layout_height="@dimen/live_pendant_height" android:layout_marginLeft="@dimen/margin_default" android:layout_marginTop="@dimen/live_pendant_margin_top" />
+    <include layout="@layout/live_record_permission_hint_layout" />
+</FrameLayout>

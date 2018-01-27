@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/guide_rl" android:background="?wbcfGuideBgColor" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/guideLl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/wbcf_guide" />
+            <CheckBox android:textSize="12.0sp" android:textColor="@color/wbcf_grey_text" android:id="@id/cb_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:checked="false" android:text="@string/wbcf_no_guide" style="@style/WbcfCustomCheckboxTheme" />
+        </LinearLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/wbcf_white" android:gravity="center" android:id="@id/bt_start_verify" android:background="@drawable/wbcf_start_verify_button_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/wbcf_start_verify" android:layout_below="@id/guideLl" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>
